@@ -1,0 +1,164 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Screens ringing/unknown calls (design doc: "Call check"). -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- Best-effort "hang up" from the intervention screen; only takes effect
+         if the OS ever grants it without default-dialer status. -->
+    <uses-permission android:name="android.permission.ANSWER_PHONE_CALLS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_PHONE_CALL"/>
+    <!-- Android 14+: MonitorService only *listens* to call state (it doesn't
+         hold the dialer role), so it runs as "specialUse" there instead of
+         "phoneCall" — see the <property> justification on the service. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE"/>
+    <!-- Lets BootReceiver restart the monitor after a reboot. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <!-- Declared for the OS picker; the grant itself happens on a special
+         Settings screen, not a runtime prompt (design doc: "App activity"). -->
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions"/>
+
+    <application
+        android:label="Beta Shield"
+        android:name="${applicationName}"
+        android:icon="@mipmap/ic_launcher">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:taskAffinity=""
+            android:theme="@style/LaunchTheme"
+            android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
+            android:hardwareAccelerated="true"
+            android:windowSoftInputMode="adjustResize">
+            <!-- Specifies an Android theme to apply to this Activity as soon as
+                 the Android process has started. This theme is visible to the user
+                 while the Flutter UI initializes. After that, this theme continues
+                 to determine the Window background behind the Flutter UI. -->
+            <meta-data
+              android:name="io.flutter.embedding.android.NormalTheme"
+              android:resource="@style/NormalTheme"
+              />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <!-- Guardian pairing deep link: betashield://pair?code=BETA-7Q4K -->
+            <intent-filter android:autoVerify="false">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="betashield" android:host="pair"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".services.MonitorService"
+            android:exported="false"
+            android:foregroundServiceType="phoneCall|specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="Watches call state in real time to warn the phone's owner during a live phone scam."/>
+        </service>
+
+        <!-- Restarts MonitorService after a reboot, if this phone is
+             Protected + paired. See "Known limitations" in README.md. -->
+        <receiver
+            android:name=".BootReceiver"
+            android:exported="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <!-- Q+ only: the OS only offers this role from Android 10 on. -->
+        <service
+            android:name=".services.BetaShieldCallScreeningService"
+            android:exported="true"
+            android:permission="android.permission.BIND_SCREENING_SERVICE">
+            <intent-filter>
+                <action android:name="android.telecom.CallScreeningService"/>
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".services.BetaShieldNotificationListenerService"
+            android:exported="true"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:label="@string/notification_access_label">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+
+        <!-- Don't delete the meta-data below.
+             This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
+        <meta-data
+            android:name="flutterEmbedding"
+            android:value="2" />
+
+        <!-- Default channel/colour for FCM data-only messages handled in Dart
+             (core/services/push_handler.dart) once Firebase is configured. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="guardian_alerts"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_shield"/>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/notification_color"/>
+
+        <!-- AdMob application ID. Replace with your own from the AdMob
+             console before release — see README → "Configuration". The value
+             here is Google's published TEST app ID, safe for development. -->
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3940256099942544~3347511713"/>
+    </application>
+
+    <!-- Package visibility (Android 11+): only these specific apps are
+         visible to Beta Shield, for detecting a remote-access app install
+         during a call. No QUERY_ALL_PACKAGES — the list is exactly the
+         AppCatalog.REMOTE_ACCESS_APPS entries. -->
+    <queries>
+        <package android:name="com.anydesk.anydeskandroid"/>
+        <package android:name="com.anydesk.adcontrol.ad1"/>
+        <package android:name="com.teamviewer.quicksupport.market"/>
+        <package android:name="com.teamviewer.host.market"/>
+        <package android:name="com.carriez.flutter_hbb"/>
+        <package android:name="com.sand.airmirror"/>
+        <package android:name="com.sand.airdroid"/>
+        <package android:name="com.microsoft.rdc.androidx"/>
+
+        <!-- Required to query activities that can process text, see:
+             https://developer.android.com/training/package-visibility and
+             https://developer.android.com/reference/android/content/Intent#ACTION_PROCESS_TEXT.
+
+             In particular, this is used by the Flutter engine in io.flutter.plugin.text.ProcessTextPlugin. -->
+        <intent>
+            <action android:name="android.intent.action.PROCESS_TEXT"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <!-- share_plus / url_launcher need these to resolve targets on API 30+. -->
+        <intent>
+            <action android:name="android.intent.action.SEND"/>
+            <data android:mimeType="text/plain"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="tel"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="https"/>
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW"/>
+            <data android:scheme="mailto"/>
+        </intent>
+    </queries>
+</manifest>

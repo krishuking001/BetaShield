@@ -1,0 +1,742 @@
+{
+  "@@locale": "te",
+  "appName": "బీటా షీల్డ్",
+  "adLabel": "ప్రకటన",
+  "parentFallbackLabel": "మీ తల్లిదండ్రులు",
+  "relMom": "అమ్మ",
+  "relDad": "నాన్న",
+  "relOther": "వేరే వ్యక్తి",
+  "timeNow": "ఇప్పుడే",
+  "catBillUtility": "బిల్లు / యుటిలిటీ",
+  "catFakeBankKyc": "నకిలీ బ్యాంక్ KYC",
+  "catDigitalArrest": "\"డిజిటల్ అరెస్ట్\"",
+  "catLottery": "బహుమతి / లాటరీ",
+  "catOtp": "OTP అడగడం",
+  "catOther": "ఇతర",
+  "evtCallIntervened": "మోసపూరిత కాల్‌లో జోక్యం చేసుకున్నాం",
+  "evtCallFlagged": "అనుమానాస్పద కాల్ గుర్తించబడింది",
+  "evtFalseAlarm": "మీరు తొలగించిన తప్పుడు అలారం",
+  "evtLinkBill": "నకిలీ కరెంట్ బిల్లు SMS",
+  "evtLinkOther": "ప్రమాదకర లింక్ నిరోధించబడింది",
+  "evtMsgKyc": "\"KYC గడువు ముగుస్తోంది\" మెసేజ్",
+  "evtMsgArrest": "\"డిజిటల్ అరెస్ట్\" బెదిరింపు మెసేజ్",
+  "evtMsgLottery": "బహుమతి / లాటరీ మెసేజ్",
+  "evtMsgOtp": "OTP అడిగే మెసేజ్",
+  "evtMsgOther": "అనుమానాస్పద మెసేజ్",
+  "evtSubLive": "{label} ఫోన్‌లో కాల్ జరుగుతోంది",
+  "@evtSubLive": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubPausedCalled": "{label} ఆగి, తర్వాత మీకు కాల్ చేశారు",
+  "@evtSubPausedCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubStopped": "{label} సమయానికి ఆగిపోయారు",
+  "@evtSubStopped": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubProceeded": "{label} అయినా ముందుకు వెళ్లారు",
+  "@evtSubProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubIgnored": "గుర్తించబడింది, {label} పట్టించుకోలేదు",
+  "@evtSubIgnored": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubLinkBlocked": "తెరవకముందే లింక్ నిరోధించబడింది",
+  "evtSubFalseAlarm": "మీరు దీన్ని తప్పుడు అలారంగా గుర్తించారు",
+  "evtSubMoneyLost": "డబ్బు నష్టం నివేదించబడింది",
+  "evtSubFlagged": "సమీక్ష కోసం గుర్తించబడింది",
+  "tlCallFrom": "{number} నుండి కాల్",
+  "@tlCallFrom": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "tlUnknownIntl": "తెలియని, అంతర్జాతీయ కోడ్",
+  "tlUnknown": "తెలియని నంబర్",
+  "tlScamList": "నంబర్ సమాజం మోసాల జాబితాలో ఉంది",
+  "tlReportedBy": "{reports} కుటుంబాలు నివేదించారు",
+  "@tlReportedBy": {
+    "placeholders": {
+      "reports": {
+        "type": "int"
+      }
+    }
+  },
+  "tlRemoteApp": "స్క్రీన్-షేరింగ్ యాప్ ఇన్‌స్టాల్ అయింది",
+  "tlDuringCallApp": "{app}, కాల్ సమయంలో",
+  "@tlDuringCallApp": {
+    "placeholders": {
+      "app": {
+        "type": "String"
+      }
+    }
+  },
+  "tlPaymentApp": "పేమెంట్ యాప్ తెరవబడింది",
+  "tlDuringCall": "కాల్ సమయంలో",
+  "tlCrossed": "రిస్క్ స్కోర్ {threshold} దాటింది — మీకు అలర్ట్ పంపబడింది",
+  "@tlCrossed": {
+    "placeholders": {
+      "threshold": {
+        "type": "int"
+      }
+    }
+  },
+  "tlLongCall": "2 నిమిషాల తర్వాత కూడా కాల్ కొనసాగుతోంది",
+  "tlStillOnCall": "ఇప్పటికీ అదే కాల్‌లో ఉన్నారు",
+  "tlLink": "ప్రమాదకర లింక్ గుర్తించబడింది",
+  "tlMessage": "అనుమానాస్పద మెసేజ్ గుర్తించబడింది",
+  "tlMessageNote": "వారి ఫోన్‌లోనే తనిఖీ చేయబడింది",
+  "tlParentPaused": "{label} హెచ్చరిక స్క్రీన్‌పై ఆగారు",
+  "@tlParentPaused": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentPausedNote": "చర్య తీసుకునే ముందు సమయం తీసుకున్నారు",
+  "tlParentCalled": "{label} మీకు కాల్ చేశారు",
+  "@tlParentCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceeded": "{label} కొనసాగించాలని నిర్ణయించుకున్నారు",
+  "@tlParentProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceededNote": "హెచ్చరిక చూసిన తర్వాత",
+  "tlFalseAlarm": "మీరు దీన్ని తప్పుడు అలారంగా గుర్తించారు",
+  "notifNumberIntl": "తెలియని అంతర్జాతీయ నంబర్",
+  "notifNumberUnknown": "తెలియని నంబర్",
+  "notifBodyPayment": "{number}, {minutes} నిమిషాలుగా — ఇంకా {rel, select, mom{ఆమె} dad{అతను} other{వాళ్ళు}} ఇప్పుడే పేమెంట్ యాప్ తెరిచారు.",
+  "@notifBodyPayment": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBodyRemote": "{number}, {minutes} నిమిషాలుగా — ఇంకా ఇప్పుడే స్క్రీన్-షేరింగ్ యాప్ ఇన్‌స్టాల్ అయింది.",
+  "@notifBodyRemote": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifBodyPlain": "{number}, {minutes} నిమిషాలుగా.",
+  "@notifBodyPlain": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifAlertTitle": "{label} ఇప్పుడు మోసపూరిత కాల్‌లో ఉండవచ్చు",
+  "@notifAlertTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionCall": "{label}కి కాల్ చేయండి",
+  "@notifActionCall": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionDetails": "వివరాలు",
+  "notifInfoTitle": "{label} ఫోన్ ఏదో గుర్తించింది",
+  "@notifInfoTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifWeeklyTitle": "మీ వారపు భద్రతా నివేదిక సిద్ధంగా ఉంది",
+  "notifWeeklyBody": "తెరవడానికి నొక్కండి",
+  "gBack": "వెనుకకు",
+  "gCancel": "రద్దు చేయండి",
+  "gOk": "సరే",
+  "gSave": "సేవ్ చేయండి",
+  "gContinue": "కొనసాగించండి",
+  "gRetry": "మళ్ళీ ప్రయత్నించండి",
+  "gDone": "డాష్‌బోర్డ్‌కి వెళ్ళండి",
+  "gErrOffline": "ఇంటర్నెట్ కనెక్షన్ లేదు. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+  "gErrInvalidCode": "ఆ కోడ్ సరిగ్గా లేదు. కోడ్‌లు ఇలా ఉంటాయి: BETA-7Q4K.",
+  "gErrNotFound": "ఆ కోడ్ కనబడలేదు. దాని గడువు ముగిసి ఉండవచ్చు.",
+  "gErrLocked": "చాలా ప్రయత్నాలు జరిగాయి. దయచేసి 15 నిమిషాలు వేచి ఉండండి.",
+  "gErrRateLimited": "చాలా అభ్యర్థనలు వచ్చాయి. దయచేసి కొద్దిసేపు వేచి ఉండండి.",
+  "gErrGeneric": "ఏదో తప్పు జరిగింది. దయచేసి మళ్ళీ ప్రయత్నించండి.",
+  "gFamilyTitle": "మీ కుటుంబం",
+  "gFamilyPlanPill": "ఫ్యామిలీ ప్లాన్",
+  "gProtectedAllOn": "సురక్షితం · అన్ని పొరలు ఆన్‌లో ఉన్నాయి",
+  "gCallsBlocked": "{n, plural, =1{కాల్ నిరోధించబడింది} other{కాల్స్ నిరోధించబడ్డాయి}}",
+  "@gCallsBlocked": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gLinksCaught": "{n, plural, =1{లింక్ పట్టుబడింది} other{లింక్‌లు పట్టుబడ్డాయి}}",
+  "@gLinksCaught": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesUsed": "{n, plural, =1{ఒక సారి ఆగారు} other{చాలా సార్లు ఆగారు}}",
+  "@gPausesUsed": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPermOff": "{perm} అనుమతి ఆఫ్‌లో ఉంది",
+  "@gPermOff": {
+    "placeholders": {
+      "perm": {
+        "type": "String"
+      }
+    }
+  },
+  "gPermCalls": "కాల్ తనిఖీ",
+  "gPermMessages": "మెసేజ్ తనిఖీ",
+  "gPermApp": "యాప్ కార్యకలాపం",
+  "gFix": "సరిచేయండి",
+  "gFixSent": "{label}కి రిమైండర్ పంపబడింది",
+  "@gFixSent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRecentEvents": "ఇటీవలి సంఘటనలు",
+  "gNoEvents": "చెప్పడానికి ఏమీ లేదు. నిశ్శబ్దం మంచిది.",
+  "gSeeReport": "ఈ వారం నివేదిక చూడండి",
+  "gAddParent": "తల్లిదండ్రుల ఫోన్ జోడించండి",
+  "gEmptyFamily": "ఇంకా ఎవరూ సురక్షితంగా లేరు",
+  "gEmptyFamilySub": "మొదలు పెట్టడానికి మీ తల్లిదండ్రుల ఫోన్ జోడించండి. వారి ఫోన్‌లో “ఇది నా తల్లిదండ్రుల ఫోన్” ఎంచుకోండి, వారికి QR కోడ్ కనిపిస్తుంది.",
+  "gLearnCta": "మోసాల గైడ్",
+  "gSettingsTitle": "సెట్టింగ్‌లు",
+  "gLiveFor": "లైవ్ · {m} నిమి {s} సె",
+  "@gLiveFor": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      },
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "gEndedAfter": "ముగిసింది · {m} నిమి",
+  "@gEndedAfter": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "gLiveHeadline": "{label} అనుమానాస్పద మోసపూరిత కాల్‌లో ఉన్నారు",
+  "@gLiveHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gEndedHeadline": "{label} అనుమానాస్పద మోసపూరిత కాల్‌లో ఉన్నారు",
+  "@gEndedHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRisk": "రిస్క్ {score}",
+  "@gRisk": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "gWhatTriggered": "ఇది దేని వల్ల మొదలైంది",
+  "gPlayPrompt": "{label} ఇంకా {rel, select, mom{ఆమె} dad{అతని} other{వారి}} ఫోన్‌ని తెరవలేదు. {rel, select, mom{ఆమె} dad{అతని} other{వారి}} ఫోన్‌లో మాట్లాడే హెచ్చరికను ప్లే చేయాలా?",
+  "@gPlayPrompt": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayWarning": "హెచ్చరికను బిగ్గరగా వినిపించండి",
+  "gPlayConfirmTitle": "{label} ఫోన్‌లో హెచ్చరిక ప్లే చేయాలా?",
+  "@gPlayConfirmTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayConfirmBody": "వారి ఫోన్‌లో హిందీలో ఒక చిన్న హెచ్చరిక బిగ్గరగా చెప్పబడుతుంది. ఇది ఇలాంటి లైవ్ కాల్ సమయంలో మాత్రమే పనిచేస్తుంది.",
+  "gPlay": "ప్లే చేయండి",
+  "gPlaySent": "{label} ఫోన్‌కి హెచ్చరిక పంపబడింది",
+  "@gPlaySent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRiskOnly": "మీరు రిస్క్ సంఘటనలను మాత్రమే చూస్తున్నారు. {rel, select, mom{ఆమె} dad{అతను} other{వారు}} పంచుకుంటే తప్ప, మెసేజ్ టెక్స్ట్ {label} ఫోన్‌లోనే ఉంటుంది.",
+  "@gRiskOnly": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gCallNow": "{label}కి ఇప్పుడే కాల్ చేయండి",
+  "@gCallNow": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gFalseAlarm": "తప్పుడు అలారంగా గుర్తించండి",
+  "gFalseMarked": "తప్పుడు అలారంగా గుర్తించబడింది",
+  "gNoPhone": "{label} కోసం ఫోన్ నంబర్ సేవ్ చేయలేదు.",
+  "@gNoPhone": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gLockSwipe": "తెరవడానికి పైకి స్వైప్ చేయండి",
+  "gReportQuiet": "{label} వద్ద\nప్రశాంతమైన వారం గడిచింది.",
+  "@gReportQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gReportBusy": "{label} వద్ద\nబిజీ వారం గడిచింది.",
+  "@gReportBusy": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gMoneyLost": "మోసానికి కోల్పోయిన డబ్బు",
+  "gWeeksRunning": "{n, plural, =1{వరుసగా ఒక వారం.} other{వరుసగా {n} వారాలు.}}",
+  "@gWeeksRunning": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gFirstWeek": "మొదటి వారం — మంచి ప్రారంభం.",
+  "gLossNote": "మీరు నివేదించారు. Beta Shield లావాదేవీలను చూడలేదు.",
+  "gScamCallsScreened": "{n, plural, =1{మోసపూరిత కాల్ వడపోయబడింది} other{మోసపూరిత కాల్స్ వడపోయబడ్డాయి}}",
+  "@gScamCallsScreened": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesTaken": "{n, plural, =1{డబ్బు పంపే ముందు ఒక సారి ఆగారు} other{డబ్బు పంపే ముందు చాలా సార్లు ఆగారు}}",
+  "@gPausesTaken": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gScamTypesSeen": "కనిపించిన మోసాల రకాలు",
+  "gNoScamTypes": "ఈ వారం ఏవీ లేవు",
+  "gOneThing": "చేయవలసిన ఒక పని",
+  "gTipBill": "{label}కి కాల్ చేసి కరెంట్-బిల్లు మెసేజ్ నకిలీదని {rel, select, mom{ఆమెకు} dad{అతనికి} other{వారికి}} చెప్పండి. బ్యానర్ కంటే మీ నోటి నుండి వినడం ఎక్కువ గుర్తుంటుంది.",
+  "@gTipBill": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipKyc": "{label}కి కాల్ చేసి {rel, select, mom{ఆమెకు} dad{అతనికి} other{వారికి}} “KYC గడువు ముగుస్తోంది” మెసేజ్‌లు నకిలీవని గుర్తు చేయండి — బ్యాంకులు ఎప్పుడూ లింక్ ద్వారా KYC అప్‌డేట్ చేయవు.",
+  "@gTipKyc": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipArrest": "{label}కి కాల్ చేసి {rel, select, mom{ఆమెకు} dad{అతనికి} other{వారికి}} గుర్తు చేయండి: పోలీసులు మరియు CBI ఫోన్ లేదా వీడియో కాల్‌లో ఎవరినీ అరెస్ట్ చేయరు.",
+  "@gTipArrest": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipLottery": "నిజమైన బహుమతులు ముందుగా ఫీజు అడగవని {label}కి గుర్తు చేయండి.",
+  "@gTipLottery": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipOtp": "{label}కి గుర్తు చేయండి: బ్యాంక్ నుండి ఎవరూ OTP లేదా PIN అడగరు.",
+  "@gTipOtp": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipQuiet": "ప్రశాంతమైన వారం మంచి వారం. {label}కి కేవలం పలకరించడానికి కాల్ చేయండి — ఆప్తుల మాట వినడమే మంచి రక్షణ.",
+  "@gTipQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gShareFamily": "నా కుటుంబంతో పంచుకోండి",
+  "gShareText": "Beta Shieldతో {label} వారం: {calls} మోసపూరిత కాల్స్ వడపోయబడ్డాయి, {links} ప్రమాదకర లింక్‌లు పట్టుబడ్డాయి, మోసానికి కోల్పోయిన డబ్బు: ₹{money}.",
+  "@gShareText": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "calls": {
+        "type": "int"
+      },
+      "links": {
+        "type": "int"
+      },
+      "money": {
+        "type": "String"
+      }
+    }
+  },
+  "gSetupTitle": "మీ గురించి",
+  "gSetupSub": "Beta Shield మీ తల్లిదండ్రులను మీకు కాల్ చేయమని అడిగినప్పుడు, వారికి ఇది కనిపిస్తుంది: మీ పేరు, మీ ఫోటో, మీ మాటలు.",
+  "gPhoto": "ఫోటో జోడించండి",
+  "gName": "మీ పేరు",
+  "gNameHi": "మీ పేరు హిందీలో (ఐచ్ఛికం)",
+  "gNameRequired": "దయచేసి మీ పేరు నమోదు చేయండి",
+  "gPhone": "మీ ఫోన్ నంబర్",
+  "gPhoneInvalid": "సరైన ఫోన్ నంబర్ నమోదు చేయండి",
+  "gMessage": "మీ మాటలు (ఐచ్ఛికం)",
+  "gMessageHint": "ఉదా. నాన్నా, ముందు నాకు కాల్ చేయి — నీ కోసం నేను ఎప్పుడూ ఫ్రీగా ఉంటాను.",
+  "gPairTitle": "తల్లిదండ్రుల ఫోన్ జోడించండి",
+  "gPairSub": "వారి ఫోన్‌లో Beta Shield తెరిచి “ఇది నా తల్లిదండ్రుల ఫోన్” ఎంచుకోండి. మీకు QR కోడ్ మరియు BETA-7Q4K లాంటి కోడ్ కనిపిస్తుంది.",
+  "gScanTab": "QR స్కాన్",
+  "gTypeTab": "కోడ్ టైప్ చేయండి",
+  "gCodeHint": "BETA-XXXX",
+  "gNext": "తదుపరి",
+  "gCameraDenied": "కెమెరా అందుబాటులో లేదు — బదులుగా కోడ్ టైప్ చేయండి.",
+  "gConfirmTitle": "వీరు ఎవరు?",
+  "gLabelHint": "పేరు (ఉదా. నాని)",
+  "gParentPhone": "వారి ఫోన్ నంబర్ (వేగంగా కాల్ చేయడానికి)",
+  "gConnect": "కనెక్ట్ చేయండి",
+  "gConnected": "{label}తో కనెక్ట్ అయింది",
+  "@gConnected": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gConnectedSub": "Beta Shield ఇప్పుడు వారి కాల్స్ మరియు మెసేజ్‌లపై నిఘా ఉంచుతుంది — వారి ఫోన్‌లో మాత్రమే. ఏదైనా తప్పుగా అనిపిస్తే మీకు అలర్ట్ వస్తుంది.",
+  "gPlanTitle": "మీరు ప్రతిసారీ ఫోన్‌లో ఉండలేరు.",
+  "gPlanSub": "Beta Shield ఉండగలదు. ఒకే ప్లాన్‌లో ఇద్దరు తల్లిదండ్రులను మరియు అత్తమామలను కవర్ చేయండి.",
+  "gPlanBest": "అత్యుత్తమ విలువ",
+  "gPlanFamily": "ఫ్యామిలీ",
+  "gPlanPerYear": "/సంవత్సరం",
+  "gPlanPerMonth": "నెలకు ₹83 · 4 ఫోన్‌ల వరకు",
+  "gPlanPerMonthShort": "/నెల",
+  "gPlanMonthly": "నెలవారీ",
+  "gPlanF1": "4 సురక్షిత ఫోన్‌ల వరకు",
+  "gPlanF2": "8 భారతీయ భాషల్లో కాల్ స్క్రీనింగ్",
+  "gPlanF3": "కాంబో-రిస్క్ గుర్తింపు (కాల్ + పేమెంట్ యాప్)",
+  "gPlanF4": "వారపు భద్రతా నివేదిక",
+  "gPlanF5": "మీ తల్లిదండ్రుల కోసం నెలవారీ వాయిస్ నోట్",
+  "gPlanQuote": "\"పాపా దాదాపు నకిలీ CBI అధికారికి ₹40,000 పంపేవారు. ఆగే స్క్రీన్ ఆయనకు నాకు కాల్ చేయడానికి ముప్పై సెకన్లు ఇచ్చింది.\"",
+  "gPlanQuoteBy": "బీటా కుటుంబం · లూధియానా",
+  "gPlanCta": "నా తల్లిదండ్రులను రక్షించండి — {price}",
+  "@gPlanCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlanStayFree": "ఫ్రీలోనే ఉండండి",
+  "gPlanFreeNote": "లాంచ్ సమయంలో అన్నీ ఉచితం.",
+  "gPlanSoonTitle": "త్వరలో వస్తుంది — ప్రస్తుతానికి ఉచితం",
+  "gPlanSoonBody": "పెయిడ్ ప్లాన్‌లు ఇంకా అందుబాటులో లేవు. లాంచ్ సమయంలో Beta Shield పూర్తిగా ఉచితం — కొనవలసింది ఏమీ లేదు.",
+  "gLearnTitle": "మోసాల గైడ్",
+  "gLearnSub": "తల్లిదండ్రులను లక్ష్యంగా చేసుకునే మోసాలు ఎలా పనిచేస్తాయి — మరియు వారికి ఏమి చెప్పాలి.",
+  "gLearnUnlockBody": "చిన్న సలహాలు ఎప్పుడూ ఉచితం. వివరణాత్మక గైడ్‌లను 24 గంటల పాటు అన్‌లాక్ చేయడానికి ఒక చిన్న వీడియో చూడండి. ఐచ్ఛికం — రక్షణ కోసం ఇది అవసరం లేదు.",
+  "gLearnUnlockBtn": "వివరణాత్మక గైడ్‌లను అన్‌లాక్ చేయండి",
+  "gLearnUnlocked": "వివరణాత్మక గైడ్‌లు 24 గంటల పాటు అన్‌లాక్ అయ్యాయి",
+  "gLearnAdUnavailable": "ప్రస్తుతం వీడియో అందుబాటులో లేదు. తర్వాత మళ్ళీ ప్రయత్నించండి.",
+  "gLearnLocked": "వివరణాత్మక గైడ్ లాక్ అయి ఉంది",
+  "gLearnBillTip": "“మీరు డబ్బు చెల్లించకపోతే ఈ రాత్రి మీ కరెంట్ కట్ అవుతుంది.” ఏ విద్యుత్ కంపెనీ కూడా WhatsApp లేదా SMS లింక్‌లపై డబ్బు అడగదు.",
+  "gLearnBillMore": "ఇది ఎలా జరుగుతుంది: \"బిల్లు\" నంబర్ మరియు కాల్ చేయడానికి ఫోన్ నంబర్‌తో కూడిన మెసేజ్. కాల్ చేసే వ్యక్తి లింక్ లేదా యాప్ ద్వారా చిన్న \"అప్‌డేట్ ఫీజు\" అడుగుతాడు. ఏమి చెప్పాలి: \"కాల్ కట్ చేయండి, డబ్బు అధికారిక యాప్‌లో లేదా కార్యాలయంలో మాత్రమే చెల్లించండి. నిజంగా కరెంట్ కట్ అవుతుంటే, మీకు రాతపూర్వక నోటీసు వస్తుంది.\"",
+  "gLearnKycTip": "“మీ KYC గడువు ముగుస్తోంది — అప్‌డేట్ చేయడానికి క్లిక్ చేయండి.” బ్యాంకులు ఎప్పుడూ లింక్ లేదా కాల్ ద్వారా KYC అప్‌డేట్ చేయమని అడగవు.",
+  "gLearnKycMore": "ఇది ఎలా జరుగుతుంది: బ్యాంక్‌లా కనిపించే నకిలీ పేజీ కార్డ్ నంబర్లు మరియు OTPలను సేకరిస్తుంది. ఏమి చెప్పాలి: \"లింక్‌ను ఎప్పుడూ తాకవద్దు. మీకు ఆందోళనగా ఉంటే, మీ కార్డ్ వెనుక ఉన్న నంబర్‌కి కాల్ చేయండి లేదా బ్రాంచ్‌కి వెళ్ళండి.\"",
+  "gLearnArrestTip": "“మీరు డిజిటల్ అరెస్ట్‌లో ఉన్నారు.” పోలీసులు, CBI మరియు కస్టమ్స్ ఎప్పుడూ ఫోన్ లేదా వీడియో కాల్‌లో ఎవరినీ అరెస్ట్ చేయరు.",
+  "gLearnArrestMore": "ఇది ఎలా జరుగుతుంది: \"పార్సిల్\" లేదా \"సిమ్ దుర్వినియోగం\" కథ, యూనిఫాంలో ఉన్న వీడియో కాలర్, మరియు లైన్‌లో ఉండి \"వెరిఫై\" చేయడానికి డబ్బు పంపమని ఒత్తిడి. ఏమి చెప్పాలి: \"కాల్ కట్ చేయండి. వీడియోలో ఉండమని లేదా డబ్బు పంపమని ఏ అధికారి అడగడు. ముందు నాకు కాల్ చేయండి.\"",
+  "gLearnLotteryTip": "“మీరు బహుమతి గెలుచుకున్నారు!” నిజమైన బహుమతులు ముందుగా ఫీజు, పన్ను లేదా బ్యాంక్ వివరాలు ఎప్పుడూ అడగవు.",
+  "gLearnLotteryMore": "ఇది ఎలా జరుగుతుంది: పెద్ద బహుమతి, తర్వాత పెరుగుతూ ఉండే చిన్న \"ప్రాసెసింగ్ ఫీజు\". ఏమి చెప్పాలి: \"గెలవడానికి నేను డబ్బు కట్టాల్సి వస్తే, అది బహుమతి కాదు.\"",
+  "gLearnOtpTip": "బ్యాంక్, డెలివరీ కంపెనీ లేదా ప్రభుత్వం నుండి ఎవరికీ మీ OTP లేదా PIN అవసరం లేదు.",
+  "gLearnOtpMore": "ఇది ఎలా జరుగుతుంది: కాల్ చేసే వ్యక్తికి మీ పేరు ముందే తెలుసు, కాబట్టి ఇది నిజమైనట్టు అనిపిస్తుంది, తర్వాత చెల్లింపును \"రద్దు చేయడానికి\" కోడ్ అడుగుతాడు. ఆ కోడ్ చెల్లింపును ఆమోదిస్తుంది. ఏమి చెప్పాలి: \"కోడ్ నాకు మాత్రమే. దాన్ని ఎప్పుడూ చదివి చెప్పవద్దు.\"",
+  "gLanguage": "భాష",
+  "gLangEn": "English",
+  "gLangHi": "हिन्दी",
+  "gEditProfile": "మీ పేరు, ఫోటో మరియు మాటలు",
+  "gAdPrivacy": "ప్రకటనల గోప్యతా ఎంపికలు",
+  "gPrivacyPolicy": "గోప్యతా విధానం",
+  "gContactSupport": "సహాయాన్ని సంప్రదించండి",
+  "gSwitchMode": "ఈ ఫోన్ దేని కోసం ఉందో మార్చండి",
+  "gSwitchConfirmTitle": "ఈ ఫోన్‌ని రీసెట్ చేయాలా?",
+  "gSwitchConfirmBody": "దీనివల్ల ఈ ఫోన్‌లో మీ కుటుంబం డిస్‌కనెక్ట్ అవుతుంది మరియు మీ ప్రొఫైల్ తొలగించబడుతుంది. మీరు మీ తల్లిదండ్రుల ఫోన్‌లో కూడా డిస్‌కనెక్ట్ చేసేవరకు వారి ఫోన్‌లు పనిచేస్తూనే ఉంటాయి.",
+  "gReset": "రీసెట్ చేయండి",
+  "gVersion": "వెర్షన్ {v}",
+  "@gVersion": {
+    "placeholders": {
+      "v": {
+        "type": "String"
+      }
+    }
+  },
+  "pGuardianFallback": "మీ బిడ్డ",
+  "pBack": "వెనుకకు",
+  "pRetry": "మళ్ళీ ప్రయత్నించండి",
+  "pNewCode": "కొత్త కోడ్",
+  "pSkipForNow": "తర్వాత కనెక్ట్ చేయండి",
+  "pModeTitle": "ఈ ఫోన్ ఎవరి కోసం?",
+  "pModeProtected": "ఇది నా తల్లిదండ్రుల ఫోన్",
+  "pModeProtectedDesc": "నిశ్శబ్ద రక్షణ. ఏదైనా తప్పు జరిగేవరకు అడ్డు రాదు.",
+  "pModeGuardian": "ఇది నా ఫోన్ — నేను సంరక్షకుడిని",
+  "pModeGuardianDesc": "మీ తల్లిదండ్రుల వద్ద మోసాల గురించి అలర్ట్‌లు పొందండి. వారి మెసేజ్‌లు ఎప్పుడూ చదవదు.",
+  "pFreeNote": "ఉపయోగించడం ఉచితం",
+  "pPermTitle": "మీ ఫోన్ రక్షించబడుతోంది",
+  "pPermSub": "మూడు అనుమతులు. అంతకు మించి ఏమీ లేదు.",
+  "pPermCallsTitle": "కాల్ తనిఖీ",
+  "pPermCallsDesc": "మీరు ఎత్తే ముందు తెలియని నంబర్లు తనిఖీ చేయబడతాయి",
+  "pPermMsgTitle": "మెసేజ్ తనిఖీ",
+  "pPermMsgDesc": "WhatsApp మరియు SMS అలర్ట్‌లు వచ్చినప్పుడే స్కాన్ చేయబడతాయి",
+  "pPermAppTitle": "యాప్ కార్యకలాపం",
+  "pPermAppDesc": "కాల్ సమయంలో పేమెంట్ యాప్ తెరిచినప్పుడు తెలుస్తుంది",
+  "pPermGrant": "అనుమతించండి",
+  "pPrivacyNote": "ఈ ఫోన్‌లోనే చదవబడుతుంది. ఎప్పుడూ అప్‌లోడ్ చేయబడదు.",
+  "pContinue": "కొనసాగించండి",
+  "pPairTitle": "మీ కొడుకు లేదా కూతురిని వారి ఫోన్‌తో దీన్ని స్కాన్ చేయమని అడగండి",
+  "pPairOrType": "లేదా వారి ఫోన్‌లో ఈ కోడ్ టైప్ చేయండి",
+  "pPairWaiting": "కనెక్ట్ అవడానికి వేచి ఉంది…",
+  "pPairWho": "మీ కొడుకు లేదా కూతురు",
+  "pPairConnected": "కనెక్ట్ అయింది",
+  "pPairExpired": "ఈ కోడ్ గడువు ముగిసింది",
+  "pPairError": "మీ ఇంటర్నెట్‌ని తనిఖీ చేయండి",
+  "pHomeHeadline": "మీరు సురక్షితంగా ఉన్నారు",
+  "pWatching": "{name} కూడా మీ పట్ల శ్రద్ధ చూపుతున్నారు",
+  "@pWatching": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pNotConnected": "ఇంకా కుటుంబంతో కనెక్ట్ కాలేదు",
+  "pThisWeek": "ఈ వారం",
+  "pStatCalls": "మోసపూరిత కాల్స్ ఆపివేయబడ్డాయి",
+  "pStatLinks": "ప్రమాదకర లింక్‌లు పట్టుబడ్డాయి",
+  "pStatMoney": "మోసాలకు కోల్పోయిన డబ్బు",
+  "pCheckMessage": "మెసేజ్‌ని తనిఖీ చేయండి",
+  "pCallGuardian": "{name}కి కాల్ చేయండి",
+  "@pCallGuardian": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pMenuTitle": "మెనూ",
+  "pMenuPermissions": "అనుమతులు",
+  "pMenuPrivacy": "గోప్యతా విధానం",
+  "pMenuLanguage": "భాష",
+  "pLanguagePickerTitle": "భాష ఎంచుకోండి",
+  "pLanguagePickerSub": "పెద్ద టెక్స్ట్ మారుతుంది. ఇంగ్లీష్ కూడా కింద ఉంటుంది.",
+  "pMenuSwitch": "ఈ ఫోన్ ఎవరి కోసమో మార్చండి",
+  "pMenuSwitchConfirmTitle": "ఈ ఫోన్‌పై రక్షణను ఆఫ్ చేయాలా?",
+  "pMenuSwitchConfirmBody": "దీనివల్ల సంరక్షకుడితో సంబంధం తెగిపోతుంది, జోడింపు తొలగిపోతుంది, మరియు కాల్స్ మరియు మెసేజ్‌లపై నిఘా ఆగిపోతుంది. దీన్ని ఇక్కడ నుండి వెనక్కి తీసుకోలేరు.",
+  "pMenuSwitchConfirmCta": "ఆఫ్ చేసి కొనసాగించండి",
+  "pCancel": "రద్దు చేయండి",
+  "pLiveTag": "అనుమానాస్పద మోసం",
+  "pLiveHeadline": "ఇది మీ బ్యాంక్ కాదు",
+  "pLiveSub": "ఇది మీ బ్యాంక్ కాదు. ఏ కోడ్‌ని కూడా పంచుకోవద్దు.",
+  "pLiveReports": "ఈ నంబర్‌ని {n} మంది మోసంగా నివేదించారు",
+  "@pLiveReports": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "pLiveBankNever": "బ్యాంకులు ఎప్పుడూ OTP లేదా PIN అడగవు",
+  "pUnknownNumber": "తెలియని నంబర్",
+  "pSpeaking": "మాట్లాడే హెచ్చరిక ప్లే అవుతోంది…",
+  "pHangUp": "కాల్ కట్ చేయండి",
+  "pKeepTalking": "మాట్లాడటం కొనసాగించండి",
+  "pSpokenWarning": "జాగ్రత్త! ఇది మోసం కావచ్చు. ఎవరికీ OTP, PIN లేదా డబ్బు ఇవ్వవద్దు. ముందు మీ కొడుకు లేదా కూతురితో మాట్లాడండి.",
+  "pIntStopTitle": "ఆగండి — ముందు మాట్లాడండి",
+  "pIntStopTitleBroken": "ఆగండి —\nముందు మాట్లాడండి",
+  "pIntStopSub": "ఆగండి. డబ్బు పంపే ముందు {name}తో మాట్లాడండి.",
+  "@pIntStopSub": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pIntSignalCall": "తెలియని నంబర్ నుండి కాల్ జరుగుతోంది",
+  "pIntSignalList": "ఈ నంబర్ మోసాల జాబితాలో ఉంది",
+  "pIntSignalRemote": "స్క్రీన్-షేరింగ్ యాప్ ఇన్‌స్టాల్ అయింది",
+  "pIntSignalPay": "అదే సమయంలో పేమెంట్ యాప్ తెరవబడింది",
+  "pIntTimerLabel": "సమయం ఆగింది",
+  "pHoldFine": "నేను బాగానే ఉన్నాను — నొక్కి పట్టుకోండి",
+  "pHoldHint": "కొనసాగించడానికి నొక్కి పట్టుకోండి",
+  "pCheckedOnPhone": "అన్ని తనిఖీలు ఈ ఫోన్‌లోనే జరిగాయి",
+  "pEmStop": "ఆగండి",
+  "pEmLine": "డబ్బు పంపవద్దు. ఇది మోసం.",
+  "pProceedAnyway": "అయినా కొనసాగించండి",
+  "pImFine": "నేను బాగానే ఉన్నాను",
+  "pVoiceTitle": "{name} చెప్తున్నారు — ముందు నాతో మాట్లాడండి",
+  "@pVoiceTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoiceBody": "{name} దీన్ని మీ కోసం సెటప్ చేశారు. రెండు నిమిషాలు మీకు ఏమీ ఖర్చు కాదు; ₹40,000 అవుతుంది.",
+  "@pVoiceBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoicePlay": "మెసేజ్ ప్లే చేయండి",
+  "pResolvedTitle": "డబ్బు సురక్షితం",
+  "pResolvedSub": "మీరు సమయానికి ఆగారు. ఏమీ పంపలేదు.",
+  "pWhatWasThis": "ఇది ఏమిటి",
+  "pExplainBill": "పాత \"కరెంట్ కట్ అవుతుంది\" మోసం. విద్యుత్ శాఖ ఎప్పుడూ WhatsAppలో డబ్బు అడగదు.",
+  "pExplainKyc": "\"KYC గడువు ముగుస్తోంది\" మోసం. బ్యాంకులు ఎప్పుడూ లింక్ లేదా కాల్ ద్వారా KYC అప్‌డేట్ చేయవు.",
+  "pExplainArrest": "\"డిజిటల్ అరెస్ట్\" మోసం. పోలీసులు మరియు CBI ఎప్పుడూ ఫోన్ లేదా వీడియో కాల్‌లో ఎవరినీ అరెస్ట్ చేయరు.",
+  "pExplainLottery": "\"మీరు బహుమతి గెలిచారు\" మోసం. నిజమైన బహుమతులు మిమ్మల్ని ముందుగా చెల్లించమని ఎప్పుడూ అడగవు.",
+  "pExplainOtp": "\"మీ OTP చెప్పండి\" మోసం. OTP లేదా PIN మీ కోసం మాత్రమే — నిజమైన వ్యక్తి ఎవరూ దాన్ని అడగరు.",
+  "pExplainGeneric": "ఇది మోసపూరిత కాల్. బ్యాంకులు, పోలీసులు మరియు ప్రభుత్వ కార్యాలయాలు ఫోన్‌లో ఎప్పుడూ డబ్బు లేదా OTP అడగవు.",
+  "pReportScam": "మోసంగా నివేదించండి",
+  "pReported": "ధన్యవాదాలు — నివేదించబడింది",
+  "pGoHome": "హోమ్‌కి వెళ్ళండి",
+  "pCheckTitle": "మెసేజ్‌ని తనిఖీ చేయండి",
+  "pCheckHint": "మెసేజ్‌ని ఇక్కడ పేస్ట్ చేయండి. ఇది ఈ ఫోన్‌లోనే తనిఖీ చేయబడుతుంది.",
+  "pCheckPaste": "మెసేజ్‌ని ఇక్కడ పేస్ట్ చేయండి",
+  "pCheckAction": "తనిఖీ చేయండి",
+  "pVerdictScam": "ఇది మోసంలా కనిపిస్తోంది",
+  "pVerdictSus": "జాగ్రత్తగా ఉండండి",
+  "pVerdictSafe": "ఏ ప్రమాదం కనబడలేదు",
+  "pReasonOtp": "ఇది OTP లేదా PIN అడుగుతోంది",
+  "pReasonUrgency": "ఇది తొందరపడమని ఒత్తిడి చేస్తోంది",
+  "pReasonLink": "లింక్ ప్రమాదకరంగా కనిపిస్తోంది",
+  "pReasonThreat": "ఇది కనెక్షన్ కట్ చేస్తానని బెదిరిస్తోంది",
+  "pReasonAuthority": "ఇది పోలీసు లేదా అధికారిలా నటిస్తోంది",
+  "pReasonPrize": "ఇది బహుమతిని ఆఫర్ చేస్తోంది",
+  "pReasonKyc": "ఇది \"KYC అప్‌డేట్\"ని కారణంగా చూపుతోంది",
+  "pNeverShare": "OTP, PIN లేదా పాస్‌వర్డ్ ఎప్పుడూ ఎవరికీ చెప్పవద్దు.",
+  "pNoteLinkTitle": "ప్రమాదకర లింక్ పట్టుబడింది",
+  "pNoteMessageTitle": "అనుమానాస్పద మెసేజ్ పట్టుబడింది",
+  "pNoteMessageBody": "ఈ ఫోన్‌లోనే తనిఖీ చేయబడింది. మెసేజ్ ఎక్కడికీ పంపలేదు.",
+  "pNudgeTitle": "దయచేసి ఒక సెట్టింగ్‌ని ఆన్ చేయండి",
+  "pNudgeBody": "రక్షణ పూర్తిగా ఉండటానికి Beta Shield యొక్క \"యాప్ కార్యకలాపం\" అనుమతిని ఆన్ చేయండి."
+}

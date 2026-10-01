@@ -1,0 +1,72 @@
+name: beta_shield
+description: "Beta Shield — scam protection for parents, run by their kids."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  flutter_riverpod: ^2.6.1
+  go_router: any
+  dio: any
+  connectivity_plus: any
+  hive_ce: any
+  hive_ce_flutter: any
+  shared_preferences: any
+  flutter_secure_storage: any
+  workmanager: any
+  firebase_core: any
+  firebase_messaging: any
+  firebase_analytics: any
+  firebase_crashlytics: any
+  flutter_local_notifications: any
+  google_mobile_ads: any
+  qr_flutter: any
+  mobile_scanner: any
+  flutter_tts: any
+  url_launcher: any
+  share_plus: any
+  image_picker: any
+  crypto: any
+  uuid: any
+  package_info_plus: any
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  generate: true
+  assets:
+    - assets/certs/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
+    - family: NotoSansDevanagari
+      fonts:
+        - asset: assets/fonts/NotoSansDevanagari.ttf
+    - family: InstrumentSerif
+      fonts:
+        - asset: assets/fonts/InstrumentSerif-Regular.ttf
+    - family: IBMPlexMono
+      fonts:
+        - asset: assets/fonts/IBMPlexMono-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/IBMPlexMono-Medium.ttf
+          weight: 500

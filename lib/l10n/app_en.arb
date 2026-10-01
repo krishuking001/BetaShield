@@ -1,0 +1,742 @@
+{
+  "@@locale": "en",
+  "appName": "Beta Shield",
+  "adLabel": "Ad",
+  "parentFallbackLabel": "Your parent",
+  "relMom": "Mom",
+  "relDad": "Dad",
+  "relOther": "Someone else",
+  "timeNow": "now",
+  "catBillUtility": "Bill / utility",
+  "catFakeBankKyc": "Fake bank KYC",
+  "catDigitalArrest": "\"Digital arrest\"",
+  "catLottery": "Prize / lottery",
+  "catOtp": "OTP request",
+  "catOther": "Other",
+  "evtCallIntervened": "Scam call intervened",
+  "evtCallFlagged": "Suspicious call flagged",
+  "evtFalseAlarm": "False alarm you cleared",
+  "evtLinkBill": "Fake electricity bill SMS",
+  "evtLinkOther": "Risky link blocked",
+  "evtMsgKyc": "\"KYC expiring\" message",
+  "evtMsgArrest": "\"Digital arrest\" threat message",
+  "evtMsgLottery": "Prize / lottery message",
+  "evtMsgOtp": "Message asking for an OTP",
+  "evtMsgOther": "Suspicious message",
+  "evtSubLive": "Call in progress on {label}'s phone",
+  "@evtSubLive": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubPausedCalled": "{label} paused, then called you",
+  "@evtSubPausedCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubStopped": "{label} stopped in time",
+  "@evtSubStopped": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubProceeded": "{label} went ahead anyway",
+  "@evtSubProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubIgnored": "Flagged, {label} ignored it",
+  "@evtSubIgnored": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubLinkBlocked": "Link blocked before opening",
+  "evtSubFalseAlarm": "You marked this as a false alarm",
+  "evtSubMoneyLost": "Money loss reported",
+  "evtSubFlagged": "Flagged for review",
+  "tlCallFrom": "Call from {number}",
+  "@tlCallFrom": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "tlUnknownIntl": "Unknown, international prefix",
+  "tlUnknown": "Unknown number",
+  "tlScamList": "Number on community scam list",
+  "tlReportedBy": "Reported by {reports} families",
+  "@tlReportedBy": {
+    "placeholders": {
+      "reports": {
+        "type": "int"
+      }
+    }
+  },
+  "tlRemoteApp": "Screen-sharing app installed",
+  "tlDuringCallApp": "{app}, during the call",
+  "@tlDuringCallApp": {
+    "placeholders": {
+      "app": {
+        "type": "String"
+      }
+    }
+  },
+  "tlPaymentApp": "Payment app opened",
+  "tlDuringCall": "During the call",
+  "tlCrossed": "Risk score crossed {threshold} — you were alerted",
+  "@tlCrossed": {
+    "placeholders": {
+      "threshold": {
+        "type": "int"
+      }
+    }
+  },
+  "tlLongCall": "Call still going after 2 minutes",
+  "tlStillOnCall": "Still on the same call",
+  "tlLink": "Risky link detected",
+  "tlMessage": "Suspicious message flagged",
+  "tlMessageNote": "Checked on their phone",
+  "tlParentPaused": "{label} paused on the warning screen",
+  "@tlParentPaused": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentPausedNote": "Took time before acting",
+  "tlParentCalled": "{label} called you",
+  "@tlParentCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceeded": "{label} chose to continue",
+  "@tlParentProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceededNote": "After seeing the warning",
+  "tlFalseAlarm": "You marked this a false alarm",
+  "notifNumberIntl": "Unknown international number",
+  "notifNumberUnknown": "Unknown number",
+  "notifBodyPayment": "{number}, {minutes} min in — and {rel, select, mom{she} dad{he} other{they}} just opened a payment app.",
+  "@notifBodyPayment": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBodyRemote": "{number}, {minutes} min in — and a screen-sharing app was just installed.",
+  "@notifBodyRemote": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifBodyPlain": "{number}, {minutes} min in.",
+  "@notifBodyPlain": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifAlertTitle": "{label} may be on a scam call right now",
+  "@notifAlertTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionCall": "Call {label}",
+  "@notifActionCall": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionDetails": "Details",
+  "notifInfoTitle": "{label}'s phone caught something",
+  "@notifInfoTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifWeeklyTitle": "Your weekly safety report is ready",
+  "notifWeeklyBody": "Tap to open",
+  "gBack": "Back",
+  "gCancel": "Cancel",
+  "gOk": "OK",
+  "gSave": "Save",
+  "gContinue": "Continue",
+  "gRetry": "Try again",
+  "gDone": "Go to dashboard",
+  "gErrOffline": "No internet connection. Please try again.",
+  "gErrInvalidCode": "That code doesn't look right. Codes look like BETA-7Q4K.",
+  "gErrNotFound": "We couldn't find that code. It may have expired.",
+  "gErrLocked": "Too many tries. Please wait 15 minutes.",
+  "gErrRateLimited": "Too many requests. Please wait a moment.",
+  "gErrGeneric": "Something went wrong. Please try again.",
+  "gFamilyTitle": "Your family",
+  "gFamilyPlanPill": "FAMILY PLAN",
+  "gProtectedAllOn": "Protected · all layers on",
+  "gCallsBlocked": "{n, plural, =1{call blocked} other{calls blocked}}",
+  "@gCallsBlocked": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gLinksCaught": "{n, plural, =1{link caught} other{links caught}}",
+  "@gLinksCaught": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesUsed": "{n, plural, =1{pause used} other{pauses used}}",
+  "@gPausesUsed": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPermOff": "{perm} permission off",
+  "@gPermOff": {
+    "placeholders": {
+      "perm": {
+        "type": "String"
+      }
+    }
+  },
+  "gPermCalls": "Call check",
+  "gPermMessages": "Message check",
+  "gPermApp": "App activity",
+  "gFix": "Fix",
+  "gFixSent": "Reminder sent to {label}",
+  "@gFixSent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRecentEvents": "Recent events",
+  "gNoEvents": "Nothing to report. Quiet is good.",
+  "gSeeReport": "See this week's report",
+  "gAddParent": "Add a parent's phone",
+  "gEmptyFamily": "No one is protected yet",
+  "gEmptyFamilySub": "Add your parent's phone to start. On their phone, choose “This is my parent's phone” and they'll see a QR code.",
+  "gLearnCta": "Scam guide",
+  "gSettingsTitle": "Settings",
+  "gLiveFor": "Live · {m} min {s} s",
+  "@gLiveFor": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      },
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "gEndedAfter": "Ended · {m} min",
+  "@gEndedAfter": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "gLiveHeadline": "{label} is on a suspected scam call",
+  "@gLiveHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gEndedHeadline": "{label} was on a suspected scam call",
+  "@gEndedHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRisk": "Risk {score}",
+  "@gRisk": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "gWhatTriggered": "What triggered this",
+  "gPlayPrompt": "{label} hasn't opened {rel, select, mom{her} dad{his} other{their}} phone. Play the spoken warning on {rel, select, mom{her} dad{his} other{their}} phone?",
+  "@gPlayPrompt": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayWarning": "Play warning aloud",
+  "gPlayConfirmTitle": "Play a warning on {label}'s phone?",
+  "@gPlayConfirmTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayConfirmBody": "It will say a short warning in Hindi, out loud, on their phone. This only works during a live call like this one.",
+  "gPlay": "Play",
+  "gPlaySent": "Warning sent to {label}'s phone",
+  "@gPlaySent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRiskOnly": "You're seeing risk events only. The message text stays on {label}'s phone unless {rel, select, mom{she} dad{he} other{they}} shares it.",
+  "@gRiskOnly": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gCallNow": "Call {label} now",
+  "@gCallNow": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gFalseAlarm": "Mark as false alarm",
+  "gFalseMarked": "Marked as a false alarm",
+  "gNoPhone": "No phone number saved for {label}.",
+  "@gNoPhone": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gLockSwipe": "Swipe up to open",
+  "gReportQuiet": "A quiet week\nat {label}'s.",
+  "@gReportQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gReportBusy": "A busy week\nat {label}'s.",
+  "@gReportBusy": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gMoneyLost": "Money lost to fraud",
+  "gWeeksRunning": "{n, plural, =1{One week running.} other{{n} weeks running.}}",
+  "@gWeeksRunning": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gFirstWeek": "First week — off to a good start.",
+  "gLossNote": "Reported by you. Beta Shield can't see transactions.",
+  "gScamCallsScreened": "{n, plural, =1{scam call screened out} other{scam calls screened out}}",
+  "@gScamCallsScreened": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesTaken": "{n, plural, =1{pause taken before paying} other{pauses taken before paying}}",
+  "@gPausesTaken": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gScamTypesSeen": "Scam types seen",
+  "gNoScamTypes": "None this week",
+  "gOneThing": "One thing to do",
+  "gTipBill": "Call {label} and tell {rel, select, mom{her} dad{him} other{them}} the electricity-bill message was fake. Hearing it from you sticks better than a banner.",
+  "@gTipBill": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipKyc": "Call {label} and remind {rel, select, mom{her} dad{him} other{them}} that “KYC expiring” messages are fake — banks never update KYC through a link.",
+  "@gTipKyc": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipArrest": "Call {label} and remind {rel, select, mom{her} dad{him} other{them}}: police and CBI never arrest anyone over a phone or video call.",
+  "@gTipArrest": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipLottery": "Remind {label} that real prizes never ask for a fee first.",
+  "@gTipLottery": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipOtp": "Remind {label}: nobody from a bank ever needs an OTP or PIN.",
+  "@gTipOtp": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipQuiet": "A quiet week is a good week. Call {label} just to say hello — a friendly voice is the best protection.",
+  "@gTipQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gShareFamily": "Share with my family",
+  "gShareText": "{label}'s week with Beta Shield: {calls} scam calls screened, {links} risky links caught, ₹{money} lost to fraud.",
+  "@gShareText": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "calls": {
+        "type": "int"
+      },
+      "links": {
+        "type": "int"
+      },
+      "money": {
+        "type": "String"
+      }
+    }
+  },
+  "gSetupTitle": "About you",
+  "gSetupSub": "This is what your parent sees when Beta Shield asks them to call you: your name, your photo, your words.",
+  "gPhoto": "Add a photo",
+  "gName": "Your name",
+  "gNameHi": "Your name in Hindi (optional)",
+  "gNameRequired": "Please enter your name",
+  "gPhone": "Your phone number",
+  "gPhoneInvalid": "Enter a valid phone number",
+  "gMessage": "Your words (optional)",
+  "gMessageHint": "e.g. Papa, call me first — I'm always free for you.",
+  "gPairTitle": "Add a parent's phone",
+  "gPairSub": "On their phone, open Beta Shield and choose “This is my parent's phone”. You'll see a QR code and a code like BETA-7Q4K.",
+  "gScanTab": "Scan QR",
+  "gTypeTab": "Type code",
+  "gCodeHint": "BETA-XXXX",
+  "gNext": "Next",
+  "gCameraDenied": "Camera unavailable — type the code instead.",
+  "gConfirmTitle": "Who is this?",
+  "gLabelHint": "Name (e.g. Nani)",
+  "gParentPhone": "Their phone number (to call them quickly)",
+  "gConnect": "Connect",
+  "gConnected": "Connected to {label}",
+  "@gConnected": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gConnectedSub": "Beta Shield is now watching over their calls and messages — on their phone only. You'll get an alert if something looks wrong.",
+  "gPlanTitle": "You can't be on the phone every time.",
+  "gPlanSub": "Beta Shield can. Cover both parents and your in-laws on one plan.",
+  "gPlanBest": "BEST VALUE",
+  "gPlanFamily": "Family",
+  "gPlanPerYear": "/year",
+  "gPlanPerMonth": "₹83 a month · up to 4 phones",
+  "gPlanPerMonthShort": "/mo",
+  "gPlanMonthly": "Monthly",
+  "gPlanF1": "Up to 4 protected phones",
+  "gPlanF2": "Call screening in 8 Indian languages",
+  "gPlanF3": "Combo-risk detection (call + payment app)",
+  "gPlanF4": "Weekly safety report",
+  "gPlanF5": "Monthly voice note for your parents",
+  "gPlanQuote": "\"Papa almost sent ₹40,000 to a fake CBI officer. The pause screen gave him thirty seconds to call me.\"",
+  "gPlanQuoteBy": "Beta family · Ludhiana",
+  "gPlanCta": "Protect my parents — {price}",
+  "@gPlanCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlanStayFree": "Stay on free",
+  "gPlanFreeNote": "Everything is free while we launch.",
+  "gPlanSoonTitle": "Coming soon — free for now",
+  "gPlanSoonBody": "Paid plans aren't available yet. Beta Shield is completely free during launch — there's nothing to buy.",
+  "gLearnTitle": "Scam guide",
+  "gLearnSub": "How the scams that target parents work — and what to say to them.",
+  "gLearnUnlockBody": "Short tips are always free. Watch one short video to unlock the detailed guides for 24 hours. Optional — nothing here is needed for protection.",
+  "gLearnUnlockBtn": "Unlock detailed guides",
+  "gLearnUnlocked": "Detailed guides unlocked for 24 hours",
+  "gLearnAdUnavailable": "No video is available right now. Try again later.",
+  "gLearnLocked": "Detailed guide locked",
+  "gLearnBillTip": "“Your electricity will be cut tonight unless you pay.” No power company asks for money on WhatsApp or SMS links.",
+  "gLearnBillMore": "How it works: a message with a \"bill\" number and a phone number to call. The caller asks for a small \"update fee\" through a link or app. What to say: \"Hang up, and pay only in the official app or at the office. If the power is really being cut, you will get a notice in writing.\"",
+  "gLearnKycTip": "“Your KYC is expiring — click to update.” Banks never ask you to update KYC through a link or a call.",
+  "gLearnKycMore": "How it works: a look-alike bank page collects card numbers and OTPs. What to say: \"Never tap the link. If you are worried, call the number on the back of your card or visit the branch.\"",
+  "gLearnArrestTip": "“You are under digital arrest.” Police, CBI and customs never arrest anyone over a phone or video call.",
+  "gLearnArrestMore": "How it works: a \"parcel\" or \"SIM misuse\" story, a uniformed video caller, and pressure to stay on the line and transfer money to \"verify\" it. What to say: \"Hang up. No officer needs you to stay on video or send money. Call me first.\"",
+  "gLearnLotteryTip": "“You won a prize!” Real prizes never ask for a fee, a tax or your bank details first.",
+  "gLearnLotteryMore": "How it works: a big prize, then a small \"processing fee\" that keeps growing. What to say: \"If I have to pay to win, it is not a prize.\"",
+  "gLearnOtpTip": "Nobody from a bank, a delivery company or the government ever needs your OTP or PIN.",
+  "gLearnOtpMore": "How it works: the caller already knows your name, so it sounds real, then asks for the code \"to cancel\" a payment. That code approves the payment. What to say: \"The code is only for me. Never read it out.\"",
+  "gLanguage": "Language",
+  "gLangEn": "English",
+  "gLangHi": "हिन्दी",
+  "gEditProfile": "Your name, photo and words",
+  "gAdPrivacy": "Ad privacy choices",
+  "gPrivacyPolicy": "Privacy policy",
+  "gContactSupport": "Contact support",
+  "gSwitchMode": "Change what this phone is for",
+  "gSwitchConfirmTitle": "Reset this phone?",
+  "gSwitchConfirmBody": "This disconnects your family on this phone and removes your profile. Your parents' phones keep running until you disconnect them there too.",
+  "gReset": "Reset",
+  "gVersion": "Version {v}",
+  "@gVersion": {
+    "placeholders": {
+      "v": {
+        "type": "String"
+      }
+    }
+  },
+  "pGuardianFallback": "your child",
+  "pBack": "Back",
+  "pRetry": "Try again",
+  "pNewCode": "New code",
+  "pSkipForNow": "Connect later",
+  "pModeTitle": "Who is this phone for?",
+  "pModeProtected": "This is my parent's phone",
+  "pModeProtectedDesc": "Quiet protection. Stays out of the way until something is wrong.",
+  "pModeGuardian": "This is my phone — I'm the guardian",
+  "pModeGuardianDesc": "Get alerts about scams at your parents’. Never read their messages.",
+  "pFreeNote": "Free to use",
+  "pPermTitle": "Your phone is being protected",
+  "pPermSub": "Three permissions. Nothing more.",
+  "pPermCallsTitle": "Call check",
+  "pPermCallsDesc": "Unknown numbers get checked before you pick up",
+  "pPermMsgTitle": "Message check",
+  "pPermMsgDesc": "WhatsApp and SMS alerts scanned as they arrive",
+  "pPermAppTitle": "App activity",
+  "pPermAppDesc": "Knows when a payment app opens during a call",
+  "pPermGrant": "Allow",
+  "pPrivacyNote": "Read on this phone only. Never uploaded.",
+  "pContinue": "Continue",
+  "pPairTitle": "Ask your son or daughter to scan this from their phone",
+  "pPairOrType": "or type this code on their phone",
+  "pPairWaiting": "Waiting to connect…",
+  "pPairWho": "Your son or daughter",
+  "pPairConnected": "Connected",
+  "pPairExpired": "This code has expired",
+  "pPairError": "Check your internet",
+  "pHomeHeadline": "You're protected",
+  "pWatching": "{name} is looking out for you too",
+  "@pWatching": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pNotConnected": "Not connected to family yet",
+  "pThisWeek": "This week",
+  "pStatCalls": "Scam calls stopped",
+  "pStatLinks": "Risky links caught",
+  "pStatMoney": "Money lost to scams",
+  "pCheckMessage": "Check a message",
+  "pCallGuardian": "Call {name}",
+  "@pCallGuardian": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pMenuTitle": "Menu",
+  "pMenuPermissions": "Permissions",
+  "pMenuPrivacy": "Privacy policy",
+  "pMenuLanguage": "Language",
+  "pLanguagePickerTitle": "Choose language",
+  "pLanguagePickerSub": "The bigger text changes. English stays underneath too.",
+  "pMenuSwitch": "Change who this phone is for",
+  "pMenuSwitchConfirmTitle": "Turn off protection on this phone?",
+  "pMenuSwitchConfirmBody": "This disconnects the guardian, erases the pairing and stops watching calls and messages. It cannot be undone from here.",
+  "pMenuSwitchConfirmCta": "Turn off and continue",
+  "pCancel": "Cancel",
+  "pLiveTag": "Suspected scam",
+  "pLiveHeadline": "This is not your bank",
+  "pLiveSub": "This is not your bank. Do not share any code.",
+  "pLiveReports": "{n} people have reported this number",
+  "@pLiveReports": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "pLiveBankNever": "Banks never ask for an OTP or PIN",
+  "pUnknownNumber": "Unknown number",
+  "pSpeaking": "Playing spoken warning…",
+  "pHangUp": "Hang up",
+  "pKeepTalking": "Keep talking",
+  "pSpokenWarning": "Careful! This may be a scam. Do not share any OTP, PIN or money with anyone. First talk to your son or daughter.",
+  "pIntStopTitle": "Stop — talk first",
+  "pIntStopTitleBroken": "Stop —\ntalk first",
+  "pIntStopSub": "Stop. Talk to {name} before you pay.",
+  "@pIntStopSub": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pIntSignalCall": "A call from an unknown number is in progress",
+  "pIntSignalList": "This number is on the scam list",
+  "pIntSignalRemote": "A screen-sharing app was installed",
+  "pIntSignalPay": "A payment app opened at the same time",
+  "pIntTimerLabel": "Time paused",
+  "pHoldFine": "I'm fine — press and hold",
+  "pHoldHint": "Press and hold to continue",
+  "pCheckedOnPhone": "All checks happened on this phone",
+  "pEmStop": "Stop",
+  "pEmLine": "Do not send money. This is a scam.",
+  "pProceedAnyway": "Proceed anyway",
+  "pImFine": "I'm fine",
+  "pVoiceTitle": "{name} says — talk to me first",
+  "@pVoiceTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoiceBody": "{name} set this up for you. Two minutes won't cost you anything; ₹40,000 will.",
+  "@pVoiceBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoicePlay": "Play message",
+  "pResolvedTitle": "Money safe",
+  "pResolvedSub": "You stopped in time. Nothing was sent.",
+  "pWhatWasThis": "What was this",
+  "pExplainBill": "The old \"electricity will be cut\" scam. The electricity department never asks for money on WhatsApp.",
+  "pExplainKyc": "The \"KYC expiring\" scam. Banks never update KYC through a link or a call.",
+  "pExplainArrest": "The \"digital arrest\" scam. Police and CBI never arrest anyone over a phone or video call.",
+  "pExplainLottery": "The \"you won a prize\" scam. Real prizes never ask you to pay first.",
+  "pExplainOtp": "The \"share your OTP\" scam. An OTP or PIN is only for you — nobody real ever asks for it.",
+  "pExplainGeneric": "This was a scam call. Banks, police and government offices never ask for money or an OTP over the phone.",
+  "pReportScam": "Report as scam",
+  "pReported": "Thanks — reported",
+  "pGoHome": "Go to home",
+  "pCheckTitle": "Check a message",
+  "pCheckHint": "Paste the message here. It is checked on this phone only.",
+  "pCheckPaste": "Paste the message here",
+  "pCheckAction": "Check",
+  "pVerdictScam": "This looks like a scam",
+  "pVerdictSus": "Be careful",
+  "pVerdictSafe": "Nothing risky found",
+  "pReasonOtp": "It asks for an OTP or PIN",
+  "pReasonUrgency": "It pushes you to hurry",
+  "pReasonLink": "The link looks dangerous",
+  "pReasonThreat": "It threatens to cut a connection",
+  "pReasonAuthority": "It pretends to be police or an officer",
+  "pReasonPrize": "It offers a prize",
+  "pReasonKyc": "It uses \"KYC update\" as a reason",
+  "pNeverShare": "Never share an OTP, PIN or password.",
+  "pNoteLinkTitle": "A risky link was caught",
+  "pNoteMessageTitle": "A suspicious message was caught",
+  "pNoteMessageBody": "Checked on this phone. The message was not sent anywhere.",
+  "pNudgeTitle": "Please turn on one setting",
+  "pNudgeBody": "Turn on Beta Shield's \"App activity\" permission so protection stays complete."
+}

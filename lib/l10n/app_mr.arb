@@ -1,0 +1,742 @@
+{
+  "@@locale": "mr",
+  "appName": "बीटा शील्ड",
+  "adLabel": "जाहिरात",
+  "parentFallbackLabel": "तुमचे आई-वडील",
+  "relMom": "आई",
+  "relDad": "बाबा",
+  "relOther": "इतर कोणीतरी",
+  "timeNow": "आत्ता",
+  "catBillUtility": "बिल / वीज-पाणी",
+  "catFakeBankKyc": "बनावट बँक KYC",
+  "catDigitalArrest": "\"डिजिटल अटक\"",
+  "catLottery": "बक्षीस / लॉटरी",
+  "catOtp": "OTP मागणी",
+  "catOther": "इतर",
+  "evtCallIntervened": "फसवणुकीच्या कॉलमध्ये हस्तक्षेप केला",
+  "evtCallFlagged": "संशयास्पद कॉल चिन्हांकित केला",
+  "evtFalseAlarm": "तुम्ही रद्द केलेला खोटा इशारा",
+  "evtLinkBill": "बनावट वीज बिल SMS",
+  "evtLinkOther": "धोकादायक लिंक रोखली",
+  "evtMsgKyc": "\"KYC संपत आहे\" मेसेज",
+  "evtMsgArrest": "\"डिजिटल अटक\" धमकीचा मेसेज",
+  "evtMsgLottery": "बक्षीस / लॉटरीचा मेसेज",
+  "evtMsgOtp": "OTP मागणारा मेसेज",
+  "evtMsgOther": "संशयास्पद मेसेज",
+  "evtSubLive": "{label}च्या फोनवर कॉल सुरू आहे",
+  "@evtSubLive": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubPausedCalled": "{label} थांबले आणि मग तुम्हाला कॉल केला",
+  "@evtSubPausedCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubStopped": "{label} वेळीच थांबले",
+  "@evtSubStopped": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubProceeded": "{label} तरीही पुढे गेले",
+  "@evtSubProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubIgnored": "चिन्हांकित केले, {label}नी दुर्लक्ष केले",
+  "@evtSubIgnored": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "evtSubLinkBlocked": "उघडण्याआधी लिंक रोखली",
+  "evtSubFalseAlarm": "तुम्ही हा खोटा इशारा म्हणून चिन्हांकित केला",
+  "evtSubMoneyLost": "पैसे गमावल्याची तक्रार नोंदवली",
+  "evtSubFlagged": "पुनरावलोकनासाठी चिन्हांकित",
+  "tlCallFrom": "{number} वरून कॉल",
+  "@tlCallFrom": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      }
+    }
+  },
+  "tlUnknownIntl": "अनोळखी, परदेशी कोड",
+  "tlUnknown": "अनोळखी नंबर",
+  "tlScamList": "नंबर सामुदायिक फसवणूक यादीत आहे",
+  "tlReportedBy": "{reports} कुटुंबांनी तक्रार केली",
+  "@tlReportedBy": {
+    "placeholders": {
+      "reports": {
+        "type": "int"
+      }
+    }
+  },
+  "tlRemoteApp": "स्क्रीन-शेअरिंग अॅप इन्स्टॉल झाले",
+  "tlDuringCallApp": "{app}, कॉल सुरू असताना",
+  "@tlDuringCallApp": {
+    "placeholders": {
+      "app": {
+        "type": "String"
+      }
+    }
+  },
+  "tlPaymentApp": "पेमेंट अॅप उघडले",
+  "tlDuringCall": "कॉल सुरू असताना",
+  "tlCrossed": "जोखीम गुण {threshold} ओलांडला — तुम्हाला सूचना पाठवली",
+  "@tlCrossed": {
+    "placeholders": {
+      "threshold": {
+        "type": "int"
+      }
+    }
+  },
+  "tlLongCall": "2 मिनिटांनंतरही कॉल सुरू आहे",
+  "tlStillOnCall": "अजूनही त्याच कॉलवर",
+  "tlLink": "धोकादायक लिंक आढळली",
+  "tlMessage": "संशयास्पद मेसेज चिन्हांकित झाला",
+  "tlMessageNote": "त्यांच्याच फोनवर तपासले",
+  "tlParentPaused": "{label} इशारा स्क्रीनवर थांबले",
+  "@tlParentPaused": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentPausedNote": "काही करण्याआधी वेळ घेतला",
+  "tlParentCalled": "{label}नी तुम्हाला कॉल केला",
+  "@tlParentCalled": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceeded": "{label}नी पुढे जाण्याचे निवडले",
+  "@tlParentProceeded": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "tlParentProceededNote": "इशारा पाहिल्यानंतर",
+  "tlFalseAlarm": "तुम्ही हा खोटा इशारा मानला",
+  "notifNumberIntl": "अनोळखी परदेशी नंबर",
+  "notifNumberUnknown": "अनोळखी नंबर",
+  "notifBodyPayment": "{number}, {minutes} मिनिटांपासून — आणि {rel, select, mom{तिने} dad{त्याने} other{त्यांनी}} आत्ताच पेमेंट अॅप उघडले.",
+  "@notifBodyPayment": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "notifBodyRemote": "{number}, {minutes} मिनिटांपासून — आणि आत्ताच स्क्रीन-शेअरिंग अॅप इन्स्टॉल झाले.",
+  "@notifBodyRemote": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifBodyPlain": "{number}, {minutes} मिनिटांपासून.",
+  "@notifBodyPlain": {
+    "placeholders": {
+      "number": {
+        "type": "String"
+      },
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "notifAlertTitle": "{label} कदाचित आत्ता फसवणुकीच्या कॉलवर असतील",
+  "@notifAlertTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionCall": "{label}ला कॉल करा",
+  "@notifActionCall": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifActionDetails": "तपशील",
+  "notifInfoTitle": "{label}च्या फोनने काहीतरी पकडले",
+  "@notifInfoTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "notifWeeklyTitle": "तुमचा साप्ताहिक सुरक्षा अहवाल तयार आहे",
+  "notifWeeklyBody": "उघडण्यासाठी टॅप करा",
+  "gBack": "मागे",
+  "gCancel": "रद्द करा",
+  "gOk": "ठीक आहे",
+  "gSave": "जतन करा",
+  "gContinue": "पुढे जा",
+  "gRetry": "पुन्हा प्रयत्न करा",
+  "gDone": "डॅशबोर्डवर जा",
+  "gErrOffline": "इंटरनेट कनेक्शन नाही. कृपया पुन्हा प्रयत्न करा.",
+  "gErrInvalidCode": "हा कोड बरोबर वाटत नाही. कोड असे दिसतात: BETA-7Q4K.",
+  "gErrNotFound": "हा कोड सापडला नाही. कदाचित त्याची मुदत संपली असेल.",
+  "gErrLocked": "खूप जास्त प्रयत्न झाले. कृपया 15 मिनिटे थांबा.",
+  "gErrRateLimited": "खूप जास्त विनंत्या. कृपया थोडे थांबा.",
+  "gErrGeneric": "काहीतरी बिघडले. कृपया पुन्हा प्रयत्न करा.",
+  "gFamilyTitle": "तुमचे कुटुंब",
+  "gFamilyPlanPill": "फॅमिली प्लॅन",
+  "gProtectedAllOn": "सुरक्षित · सर्व स्तर सुरू",
+  "gCallsBlocked": "{n, plural, =1{कॉल रोखला} other{कॉल रोखले}}",
+  "@gCallsBlocked": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gLinksCaught": "{n, plural, =1{लिंक पकडली} other{लिंक पकडल्या}}",
+  "@gLinksCaught": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesUsed": "{n, plural, =1{वेळा थांबले} other{वेळा थांबले}}",
+  "@gPausesUsed": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPermOff": "{perm} परवानगी बंद आहे",
+  "@gPermOff": {
+    "placeholders": {
+      "perm": {
+        "type": "String"
+      }
+    }
+  },
+  "gPermCalls": "कॉल तपासणी",
+  "gPermMessages": "मेसेज तपासणी",
+  "gPermApp": "अॅप क्रियाकलाप",
+  "gFix": "दुरुस्त करा",
+  "gFixSent": "{label}ला आठवण पाठवली",
+  "@gFixSent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRecentEvents": "अलीकडील घटना",
+  "gNoEvents": "सांगण्यासारखे काही नाही. शांतता चांगली आहे.",
+  "gSeeReport": "या आठवड्याचा अहवाल पहा",
+  "gAddParent": "आई-वडिलांचा फोन जोडा",
+  "gEmptyFamily": "अजून कोणाचेही संरक्षण सुरू झालेले नाही",
+  "gEmptyFamilySub": "सुरुवात करण्यासाठी तुमच्या आई-वडिलांचा फोन जोडा. त्यांच्या फोनवर “हा माझ्या आई-वडिलांचा फोन आहे” निवडा, तिथे त्यांना QR कोड दिसेल.",
+  "gLearnCta": "फसवणुकीची मार्गदर्शिका",
+  "gSettingsTitle": "सेटिंग्ज",
+  "gLiveFor": "लाइव्ह · {m} मिनिटे {s} सेकंद",
+  "@gLiveFor": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      },
+      "s": {
+        "type": "int"
+      }
+    }
+  },
+  "gEndedAfter": "संपला · {m} मिनिटे",
+  "@gEndedAfter": {
+    "placeholders": {
+      "m": {
+        "type": "int"
+      }
+    }
+  },
+  "gLiveHeadline": "{label} संशयित फसवणुकीच्या कॉलवर आहेत",
+  "@gLiveHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gEndedHeadline": "{label} संशयित फसवणुकीच्या कॉलवर होते",
+  "@gEndedHeadline": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRisk": "जोखीम {score}",
+  "@gRisk": {
+    "placeholders": {
+      "score": {
+        "type": "int"
+      }
+    }
+  },
+  "gWhatTriggered": "हे कशामुळे सुरू झाले",
+  "gPlayPrompt": "{label}नी अजून {rel, select, mom{तिचा} dad{त्याचा} other{त्यांचा}} फोन उघडलेला नाही. {rel, select, mom{तिच्या} dad{त्याच्या} other{त्यांच्या}} फोनवर बोलका इशारा वाजवायचा का?",
+  "@gPlayPrompt": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayWarning": "इशारा मोठ्याने ऐकवा",
+  "gPlayConfirmTitle": "{label}च्या फोनवर इशारा वाजवायचा का?",
+  "@gPlayConfirmTitle": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlayConfirmBody": "त्यांच्या फोनवर हिंदीत एक छोटा इशारा मोठ्याने बोलला जाईल. हे फक्त अशा चालू असलेल्या लाइव्ह कॉलदरम्यानच काम करते.",
+  "gPlay": "वाजवा",
+  "gPlaySent": "{label}च्या फोनवर इशारा पाठवला",
+  "@gPlaySent": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gRiskOnly": "तुम्हाला फक्त जोखमीच्या घटना दिसत आहेत. मेसेजचा मजकूर {label}च्या फोनवरच राहतो, जोपर्यंत {rel, select, mom{ती} dad{तो} other{ते}} तो शेअर करत नाही.",
+  "@gRiskOnly": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gCallNow": "{label}ला आत्ता कॉल करा",
+  "@gCallNow": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gFalseAlarm": "खोटा इशारा म्हणून चिन्हांकित करा",
+  "gFalseMarked": "खोटा इशारा म्हणून चिन्हांकित केले",
+  "gNoPhone": "{label}साठी फोन नंबर जतन केलेला नाही.",
+  "@gNoPhone": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gLockSwipe": "उघडण्यासाठी वर स्वाइप करा",
+  "gReportQuiet": "{label}कडे\nशांत आठवडा गेला.",
+  "@gReportQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gReportBusy": "{label}कडे\nधावपळीचा आठवडा गेला.",
+  "@gReportBusy": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gMoneyLost": "फसवणुकीत गमावलेले पैसे",
+  "gWeeksRunning": "{n, plural, =1{सलग एक आठवडा.} other{सलग {n} आठवडे.}}",
+  "@gWeeksRunning": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gFirstWeek": "पहिला आठवडा — चांगली सुरुवात.",
+  "gLossNote": "तुम्ही नोंदवले आहे. Beta Shield व्यवहार पाहू शकत नाही.",
+  "gScamCallsScreened": "{n, plural, =1{फसवणुकीचा कॉल रोखला गेला} other{फसवणुकीचे कॉल रोखले गेले}}",
+  "@gScamCallsScreened": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gPausesTaken": "{n, plural, =1{वेळा पैसे पाठवण्याआधी थांबले} other{वेळा पैसे पाठवण्याआधी थांबले}}",
+  "@gPausesTaken": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "gScamTypesSeen": "दिसलेले फसवणुकीचे प्रकार",
+  "gNoScamTypes": "या आठवड्यात काहीच नाही",
+  "gOneThing": "एक गोष्ट करा",
+  "gTipBill": "{label}ला कॉल करा आणि {rel, select, mom{तिला} dad{त्याला} other{त्यांना}} सांगा की वीज-बिलाचा मेसेज बनावट होता. बॅनरपेक्षा तुमच्याकडून ऐकलेले जास्त लक्षात राहते.",
+  "@gTipBill": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipKyc": "{label}ला कॉल करा आणि {rel, select, mom{तिला} dad{त्याला} other{त्यांना}} आठवण करून द्या की “KYC संपत आहे” असे मेसेज बनावट असतात — बँका कधीही लिंकवरून KYC अपडेट करत नाहीत.",
+  "@gTipKyc": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipArrest": "{label}ला कॉल करा आणि {rel, select, mom{तिला} dad{त्याला} other{त्यांना}} आठवण करून द्या: पोलीस किंवा CBI कधीही फोन किंवा व्हिडिओ कॉलवर कोणाला अटक करत नाहीत.",
+  "@gTipArrest": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "rel": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipLottery": "{label}ला आठवण करून द्या की खऱ्या बक्षिसासाठी आधी पैसे कधीच मागितले जात नाहीत.",
+  "@gTipLottery": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipOtp": "{label}ला आठवण करून द्या: बँकेतून कोणीही OTP किंवा PIN कधीच मागत नाही.",
+  "@gTipOtp": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gTipQuiet": "शांत आठवडा हा चांगला आठवडा असतो. फक्त खुशाली विचारायला {label}ला कॉल करा — जवळच्या माणसाचा आवाज हीच सर्वात चांगली सुरक्षा आहे.",
+  "@gTipQuiet": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gShareFamily": "कुटुंबासोबत शेअर करा",
+  "gShareText": "Beta Shield सोबत {label}चा आठवडा: {calls} फसवणुकीचे कॉल रोखले, {links} धोकादायक लिंक पकडल्या, फसवणुकीत गमावलेले पैसे ₹{money}.",
+  "@gShareText": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      },
+      "calls": {
+        "type": "int"
+      },
+      "links": {
+        "type": "int"
+      },
+      "money": {
+        "type": "String"
+      }
+    }
+  },
+  "gSetupTitle": "तुमच्याबद्दल",
+  "gSetupSub": "Beta Shield जेव्हा तुमच्या आई-वडिलांना तुम्हाला कॉल करायला सांगते, तेव्हा त्यांना हेच दिसते: तुमचे नाव, तुमचा फोटो, तुमचे शब्द.",
+  "gPhoto": "फोटो जोडा",
+  "gName": "तुमचे नाव",
+  "gNameHi": "हिंदीत तुमचे नाव (ऐच्छिक)",
+  "gNameRequired": "कृपया तुमचे नाव टाका",
+  "gPhone": "तुमचा फोन नंबर",
+  "gPhoneInvalid": "योग्य फोन नंबर टाका",
+  "gMessage": "तुमचे शब्द (ऐच्छिक)",
+  "gMessageHint": "उदा. बाबा, आधी मला कॉल करा — मी तुमच्यासाठी नेहमी मोकळा असतो.",
+  "gPairTitle": "आई-वडिलांचा फोन जोडा",
+  "gPairSub": "त्यांच्या फोनवर Beta Shield उघडून “हा माझ्या आई-वडिलांचा फोन आहे” निवडा. तिथे QR कोड आणि BETA-7Q4K सारखा कोड दिसेल.",
+  "gScanTab": "QR स्कॅन करा",
+  "gTypeTab": "कोड टाका",
+  "gCodeHint": "BETA-XXXX",
+  "gNext": "पुढे",
+  "gCameraDenied": "कॅमेरा उपलब्ध नाही — त्याऐवजी कोड टाका.",
+  "gConfirmTitle": "हे कोण आहेत?",
+  "gLabelHint": "नाव (उदा. नानी)",
+  "gParentPhone": "त्यांचा फोन नंबर (लवकर कॉल करण्यासाठी)",
+  "gConnect": "जोडा",
+  "gConnected": "{label}शी जोडले गेले",
+  "@gConnected": {
+    "placeholders": {
+      "label": {
+        "type": "String"
+      }
+    }
+  },
+  "gConnectedSub": "आता Beta Shield त्यांच्या कॉल आणि मेसेजवर लक्ष ठेवेल — फक्त त्यांच्याच फोनवर. काही चुकीचे वाटल्यास तुम्हाला सूचना मिळेल.",
+  "gPlanTitle": "तुम्ही दर वेळी फोनवर लक्ष ठेवू शकत नाही.",
+  "gPlanSub": "Beta Shield ठेवू शकते. आई-वडील आणि सासू-सासरे, सर्वांना एकाच प्लॅनमध्ये जोडा.",
+  "gPlanBest": "सर्वोत्तम मूल्य",
+  "gPlanFamily": "फॅमिली",
+  "gPlanPerYear": "/वर्ष",
+  "gPlanPerMonth": "₹83 दरमहा · 4 फोनपर्यंत",
+  "gPlanPerMonthShort": "/महिना",
+  "gPlanMonthly": "मासिक",
+  "gPlanF1": "4 सुरक्षित फोनपर्यंत",
+  "gPlanF2": "8 भारतीय भाषांमध्ये कॉल तपासणी",
+  "gPlanF3": "कॉम्बो-जोखीम ओळख (कॉल + पेमेंट अॅप)",
+  "gPlanF4": "साप्ताहिक सुरक्षा अहवाल",
+  "gPlanF5": "आई-वडिलांसाठी मासिक व्हॉइस नोट",
+  "gPlanQuote": "\"बाबा बनावट CBI अधिकाऱ्याला ₹40,000 पाठवणारच होते. थांबण्याच्या स्क्रीनने त्यांना मला कॉल करायला तीस सेकंद दिले.\"",
+  "gPlanQuoteBy": "बीटा कुटुंब · लुधियाना",
+  "gPlanCta": "माझ्या आई-वडिलांचे संरक्षण करा — {price}",
+  "@gPlanCta": {
+    "placeholders": {
+      "price": {
+        "type": "String"
+      }
+    }
+  },
+  "gPlanStayFree": "मोफत आवृत्तीवर रहा",
+  "gPlanFreeNote": "लाँचदरम्यान सर्व काही मोफत आहे.",
+  "gPlanSoonTitle": "लवकरच येत आहे — सध्या मोफत",
+  "gPlanSoonBody": "पेड प्लॅन अजून उपलब्ध नाहीत. लाँचदरम्यान Beta Shield पूर्णपणे मोफत आहे — काहीही विकत घेण्याची गरज नाही.",
+  "gLearnTitle": "फसवणुकीची मार्गदर्शिका",
+  "gLearnSub": "आई-वडिलांना लक्ष्य करणाऱ्या फसवणुकी कशा चालतात — आणि त्यांना काय सांगावे.",
+  "gLearnUnlockBody": "छोट्या टिप्स नेहमीच मोफत असतात. सविस्तर मार्गदर्शिका 24 तासांसाठी उघडण्यासाठी एक छोटा व्हिडिओ पहा. ऐच्छिक — संरक्षणासाठी याची गरज नाही.",
+  "gLearnUnlockBtn": "सविस्तर मार्गदर्शिका उघडा",
+  "gLearnUnlocked": "सविस्तर मार्गदर्शिका 24 तासांसाठी उघडली",
+  "gLearnAdUnavailable": "सध्या कोणताही व्हिडिओ उपलब्ध नाही. नंतर पुन्हा प्रयत्न करा.",
+  "gLearnLocked": "सविस्तर मार्गदर्शिका बंद आहे",
+  "gLearnBillTip": "“आज रात्री वीज कापली जाईल, आत्ताच पैसे भरा.” कोणतीही वीज कंपनी WhatsApp किंवा SMS लिंकवर पैसे मागत नाही.",
+  "gLearnBillMore": "हे असे घडते: \"बिल\" नंबर आणि कॉल करण्यासाठी फोन नंबर असलेला मेसेज. कॉलवर लिंक किंवा अॅपवरून छोटी \"अपडेट फी\" मागितली जाते. काय बोलावे: \"फोन ठेवा, आणि पैसे फक्त अधिकृत अॅपवर किंवा कार्यालयातच भरा. वीज खरंच कापली जाणार असेल तर लेखी सूचना येईल.\"",
+  "gLearnKycTip": "“तुमचे KYC संपत आहे — अपडेट करण्यासाठी क्लिक करा.” बँका कधीही लिंकवरून किंवा कॉलवरून KYC अपडेट करायला सांगत नाहीत.",
+  "gLearnKycMore": "हे असे घडते: बँकेसारखे दिसणारे बनावट पेज कार्ड नंबर आणि OTP घेते. काय बोलावे: \"लिंकवर कधीच टॅप करू नका. काळजी वाटत असल्यास कार्डच्या मागे लिहिलेल्या नंबरवर कॉल करा किंवा शाखेत जा.\"",
+  "gLearnArrestTip": "“तुम्ही डिजिटल अटकेत आहात.” पोलीस, CBI किंवा कस्टम कधीही फोन किंवा व्हिडिओ कॉलवर कोणाला अटक करत नाहीत.",
+  "gLearnArrestMore": "हे असे घडते: \"पार्सल\" किंवा \"सिमचा गैरवापर\" अशी कथा, वर्दीतला व्हिडिओ कॉलर, आणि कॉलवर थांबून \"पडताळणीसाठी\" पैसे पाठवण्याचा दबाव. काय बोलावे: \"फोन ठेवा. कोणत्याही अधिकाऱ्याला तुम्ही व्हिडिओवर थांबावे किंवा पैसे पाठवावेत असे कधीच लागत नाही. आधी मला कॉल करा.\"",
+  "gLearnLotteryTip": "“तुम्ही बक्षीस जिंकले आहे!” खऱ्या बक्षिसासाठी आधी फी, कर किंवा बँक तपशील कधीच मागितले जात नाहीत.",
+  "gLearnLotteryMore": "हे असे घडते: मोठे बक्षीस, मग वाढत जाणारी छोटी \"प्रोसेसिंग फी\". काय बोलावे: \"जिंकण्यासाठी पैसे द्यावे लागत असतील, तर ते बक्षीस नाहीच.\"",
+  "gLearnOtpTip": "बँक, डिलिव्हरी कंपनी किंवा सरकारकडून कोणीही तुमचा OTP किंवा PIN कधीच मागत नाही.",
+  "gLearnOtpMore": "हे असे घडते: कॉल करणाऱ्याला तुमचे नाव आधीच माहीत असते, त्यामुळे तो खरा वाटतो, मग पेमेंट \"रद्द करण्यासाठी\" कोड मागतो. तोच कोड पेमेंट मंजूर करतो. काय बोलावे: \"हा कोड फक्त माझ्यासाठी आहे. तो कधीच मोठ्याने सांगू नका.\"",
+  "gLanguage": "भाषा",
+  "gLangEn": "English",
+  "gLangHi": "हिन्दी",
+  "gEditProfile": "तुमचे नाव, फोटो आणि शब्द",
+  "gAdPrivacy": "जाहिरात गोपनीयता पर्याय",
+  "gPrivacyPolicy": "गोपनीयता धोरण",
+  "gContactSupport": "मदतीसाठी संपर्क करा",
+  "gSwitchMode": "हा फोन कशासाठी आहे ते बदला",
+  "gSwitchConfirmTitle": "हा फोन रीसेट करायचा का?",
+  "gSwitchConfirmBody": "यामुळे या फोनवरून तुमचे कुटुंब डिस्कनेक्ट होईल आणि तुमची प्रोफाइल काढली जाईल. तुमच्या आई-वडिलांचे फोन तुम्ही तिथूनही डिस्कनेक्ट करेपर्यंत सुरू राहतील.",
+  "gReset": "रीसेट करा",
+  "gVersion": "आवृत्ती {v}",
+  "@gVersion": {
+    "placeholders": {
+      "v": {
+        "type": "String"
+      }
+    }
+  },
+  "pGuardianFallback": "तुमचे मूल",
+  "pBack": "मागे",
+  "pRetry": "पुन्हा प्रयत्न करा",
+  "pNewCode": "नवीन कोड",
+  "pSkipForNow": "नंतर जोडा",
+  "pModeTitle": "हा फोन कोणासाठी आहे?",
+  "pModeProtected": "हा माझ्या आई-वडिलांचा फोन आहे",
+  "pModeProtectedDesc": "शांत संरक्षण. काहीतरी चुकीचे होईपर्यंत आडवे येत नाही.",
+  "pModeGuardian": "हा माझा फोन आहे — मी संरक्षक आहे",
+  "pModeGuardianDesc": "तुमच्या आई-वडिलांबद्दल फसवणुकीच्या सूचना मिळवा. त्यांचे मेसेज कधीच वाचले जात नाहीत.",
+  "pFreeNote": "वापरण्यासाठी मोफत",
+  "pPermTitle": "तुमचा फोन सुरक्षित केला जात आहे",
+  "pPermSub": "फक्त तीन परवानग्या. यापेक्षा जास्त काहीही नाही.",
+  "pPermCallsTitle": "कॉल तपासणी",
+  "pPermCallsDesc": "अनोळखी नंबर तुम्ही उचलण्याआधी तपासले जातात",
+  "pPermMsgTitle": "मेसेज तपासणी",
+  "pPermMsgDesc": "WhatsApp आणि SMS सूचना येताच तपासल्या जातात",
+  "pPermAppTitle": "अॅप क्रियाकलाप",
+  "pPermAppDesc": "कॉल सुरू असताना पेमेंट अॅप उघडल्यास कळते",
+  "pPermGrant": "परवानगी द्या",
+  "pPrivacyNote": "फक्त याच फोनवर वाचले जाते. कधीच अपलोड केले जात नाही.",
+  "pContinue": "पुढे जा",
+  "pPairTitle": "तुमच्या मुलाला किंवा मुलीला त्यांच्या फोनवरून हे स्कॅन करायला सांगा",
+  "pPairOrType": "किंवा त्यांच्या फोनवर हा कोड टाका",
+  "pPairWaiting": "जोडणी होण्याची वाट पाहत आहे…",
+  "pPairWho": "तुमचा मुलगा किंवा मुलगी",
+  "pPairConnected": "जोडले गेले",
+  "pPairExpired": "या कोडची मुदत संपली आहे",
+  "pPairError": "तुमचे इंटरनेट तपासा",
+  "pHomeHeadline": "तुम्ही सुरक्षित आहात",
+  "pWatching": "{name} सुद्धा तुमची काळजी घेत आहेत",
+  "@pWatching": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pNotConnected": "अजून कुटुंबाशी जोडलेले नाही",
+  "pThisWeek": "या आठवड्यात",
+  "pStatCalls": "फसवणुकीचे कॉल थांबवले",
+  "pStatLinks": "धोकादायक लिंक पकडल्या",
+  "pStatMoney": "फसवणुकीत गमावलेले पैसे",
+  "pCheckMessage": "मेसेज तपासा",
+  "pCallGuardian": "{name}ला कॉल करा",
+  "@pCallGuardian": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pMenuTitle": "मेनू",
+  "pMenuPermissions": "परवानग्या",
+  "pMenuPrivacy": "गोपनीयता धोरण",
+  "pMenuLanguage": "भाषा",
+  "pLanguagePickerTitle": "भाषा निवडा",
+  "pLanguagePickerSub": "मोठा मजकूर बदलेल. इंग्रजी खालीही राहील.",
+  "pMenuSwitch": "हा फोन कोणासाठी आहे ते बदला",
+  "pMenuSwitchConfirmTitle": "या फोनवरील संरक्षण बंद करायचे का?",
+  "pMenuSwitchConfirmBody": "यामुळे संरक्षकाशी संपर्क तुटेल, जोडणी मिटेल आणि कॉल व मेसेजवर लक्ष ठेवणे बंद होईल. हे इथून परत केले जाऊ शकत नाही.",
+  "pMenuSwitchConfirmCta": "बंद करा आणि पुढे जा",
+  "pCancel": "रद्द करा",
+  "pLiveTag": "फसवणुकीची शक्यता",
+  "pLiveHeadline": "ही तुमची बँक नाही",
+  "pLiveSub": "ही तुमची बँक नाही. कोणताही कोड कोणालाही सांगू नका.",
+  "pLiveReports": "या नंबरला {n} लोकांनी फसवणूक म्हणून तक्रार केली आहे",
+  "@pLiveReports": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "pLiveBankNever": "बँका कधीही OTP किंवा PIN मागत नाहीत",
+  "pUnknownNumber": "अनोळखी नंबर",
+  "pSpeaking": "बोलका इशारा वाजत आहे…",
+  "pHangUp": "फोन ठेवा",
+  "pKeepTalking": "बोलणे सुरू ठेवा",
+  "pSpokenWarning": "सावधान! ही फसवणूक असू शकते. कोणालाही OTP, PIN किंवा पैसे देऊ नका. आधी तुमच्या मुलाशी किंवा मुलीशी बोला.",
+  "pIntStopTitle": "थांबा — आधी बोला",
+  "pIntStopTitleBroken": "थांबा —\nआधी बोला",
+  "pIntStopSub": "थांबा. पैसे पाठवण्याआधी {name}शी बोला.",
+  "@pIntStopSub": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pIntSignalCall": "अनोळखी नंबरवरून कॉल सुरू आहे",
+  "pIntSignalList": "हा नंबर फसवणुकीच्या यादीत आहे",
+  "pIntSignalRemote": "स्क्रीन-शेअरिंग अॅप इन्स्टॉल झाले",
+  "pIntSignalPay": "त्याच वेळी पेमेंट अॅप उघडले",
+  "pIntTimerLabel": "थांबण्याची वेळ",
+  "pHoldFine": "मी ठीक आहे — दाबून धरा",
+  "pHoldHint": "पुढे जाण्यासाठी दाबून धरा",
+  "pCheckedOnPhone": "सर्व तपासणी याच फोनवर झाली",
+  "pEmStop": "थांबा",
+  "pEmLine": "पैसे पाठवू नका. ही फसवणूक आहे.",
+  "pProceedAnyway": "तरीही पुढे जा",
+  "pImFine": "मी ठीक आहे",
+  "pVoiceTitle": "{name} म्हणतात — आधी माझ्याशी बोला",
+  "@pVoiceTitle": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoiceBody": "{name} यांनी तुमच्यासाठी हे सेट केले आहे. दोन मिनिटांनी काहीच जाणार नाही; ₹40,000 मात्र जातील.",
+  "@pVoiceBody": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "pVoicePlay": "संदेश ऐका",
+  "pResolvedTitle": "पैसे सुरक्षित आहेत",
+  "pResolvedSub": "तुम्ही वेळीच थांबलात. काहीही पाठवले गेले नाही.",
+  "pWhatWasThis": "हे काय होते",
+  "pExplainBill": "\"वीज कापली जाईल\" ही जुनी फसवणूक आहे. वीज विभाग कधीही WhatsApp वर पैसे मागत नाही.",
+  "pExplainKyc": "\"KYC संपत आहे\" ही फसवणूक आहे. बँका कधीही लिंकवरून किंवा कॉलवरून KYC अपडेट करत नाहीत.",
+  "pExplainArrest": "\"डिजिटल अटक\" ही फसवणूक आहे. पोलीस किंवा CBI कधीही फोन किंवा व्हिडिओ कॉलवर अटक करत नाहीत.",
+  "pExplainLottery": "\"तुम्ही बक्षीस जिंकले\" ही फसवणूक आहे. खऱ्या बक्षिसासाठी आधी पैसे कधीच मागितले जात नाहीत.",
+  "pExplainOtp": "\"तुमचा OTP सांगा\" ही फसवणूक आहे. OTP किंवा PIN फक्त तुमच्यासाठी असतो — खरी व्यक्ती तो कधीच मागत नाही.",
+  "pExplainGeneric": "हा फसवणुकीचा कॉल होता. बँका, पोलीस किंवा सरकारी कार्यालये फोनवर कधीही पैसे किंवा OTP मागत नाहीत.",
+  "pReportScam": "फसवणूक म्हणून तक्रार करा",
+  "pReported": "धन्यवाद — तक्रार नोंदवली",
+  "pGoHome": "होमवर जा",
+  "pCheckTitle": "मेसेज तपासा",
+  "pCheckHint": "मेसेज इथे पेस्ट करा. याची तपासणी फक्त याच फोनवर होते.",
+  "pCheckPaste": "इथे मेसेज पेस्ट करा",
+  "pCheckAction": "तपासा",
+  "pVerdictScam": "ही फसवणूक वाटते",
+  "pVerdictSus": "सावध रहा",
+  "pVerdictSafe": "कोणताही धोका आढळला नाही",
+  "pReasonOtp": "यात OTP किंवा PIN मागितला आहे",
+  "pReasonUrgency": "यात घाई करण्यासाठी दबाव आणला आहे",
+  "pReasonLink": "लिंक धोकादायक वाटते",
+  "pReasonThreat": "यात कनेक्शन तोडण्याची धमकी दिली आहे",
+  "pReasonAuthority": "यात पोलीस किंवा अधिकारी असल्याचे भासवले आहे",
+  "pReasonPrize": "यात बक्षीस देण्याचे आमिष दाखवले आहे",
+  "pReasonKyc": "यात \"KYC अपडेट\" हे कारण दिले आहे",
+  "pNeverShare": "OTP, PIN किंवा पासवर्ड कधीच कोणाला सांगू नका.",
+  "pNoteLinkTitle": "एक धोकादायक लिंक पकडली गेली",
+  "pNoteMessageTitle": "एक संशयास्पद मेसेज पकडला गेला",
+  "pNoteMessageBody": "याच फोनवर तपासले गेले. मेसेज कुठेही पाठवला गेला नाही.",
+  "pNudgeTitle": "कृपया एक सेटिंग सुरू करा",
+  "pNudgeBody": "संरक्षण पूर्ण राहावे यासाठी Beta Shieldची \"अॅप क्रियाकलाप\" परवानगी सुरू करा."
+}
