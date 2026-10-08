@@ -1,6 +1,6 @@
 # Store listing — Beta Shield (copy/paste into Play Console)
 
-Fields marked **[YOU]** need your real value. Everything else is ready.
+Fields marked **[YOU]** are the few values only you can provide. Everything else is ready.
 Wording is deliberately modest: Beta Shield **warns** people; it does not
 block calls, record calls, or guarantee protection.
 
@@ -66,15 +66,15 @@ Beta Shield needs Android 7.0 or newer. Features that read call state and messag
 
 | Field | Value |
 |---|---|
-| Email (public) | `[SUPPORT_EMAIL]` |
-| Website (optional) | `[WEBSITE_URL]` |
+| Email (public) | `krishnahanda01234@gmail.com` |
+| Website (optional) | leave blank (or `https://krishuking001.github.io/BetaShield/privacy-policy/`) |
 | Phone (optional) | leave blank |
 
 ## App content declarations
 
 | Section | Answer |
 |---|---|
-| **Privacy policy URL** | **[YOU]** `[PRIVACY_POLICY_URL]` — host `documentation/PRIVACY_POLICY.md` publicly (GitHub Pages / Google Sites / your domain) and use the same URL in the app build (see RELEASE_CHECKLIST RED-1) |
+| **Privacy policy URL** | `https://krishuking001.github.io/BetaShield/privacy-policy/` (live, verified; same URL is compiled into the app) |
 | **Ads** | **Yes, contains ads** (Google AdMob, Guardian mode only) |
 | **App access** | *Some functionality is restricted* → see "App access instructions" below |
 | **Target audience** | **18 and over** only. Not designed for children. |

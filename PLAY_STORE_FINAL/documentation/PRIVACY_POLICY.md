@@ -1,10 +1,8 @@
+<!-- Live at https://krishuking001.github.io/BetaShield/privacy-policy/ (source: docs/privacy-policy.md) -->
+
 # Beta Shield — Privacy Policy
 
 *Last updated: 8 October 2026 · Version 1.0.0 of the app*
-
-> **Before you publish this page:** replace `[SUPPORT_EMAIL]` and
-> `[OPERATOR_NAME / ADDRESS]` below with your real details, then host this
-> text at a public URL. (Everything else describes what the app does today.)
 
 Beta Shield ("we", "our", "the app") helps adult children protect their
 parents from phone and message scams. It is built around one rule: **the
@@ -12,7 +10,7 @@ content of a parent's calls and messages is not uploaded.** This policy
 explains what the app reads on a phone, what it sends to our servers, which
 other companies' services it uses, and the choices you have.
 
-Operator: [OPERATOR_NAME / ADDRESS] · Contact: [SUPPORT_EMAIL]
+Operator: Krishna Handa, India · Contact: krishnahanda01234@gmail.com
 
 ## The two roles
 
@@ -139,7 +137,7 @@ expect.
 - **Disconnect / reset on the phone.** "Change who this phone is for" (or
   "Reset this phone" in Guardian mode) clears the pairing and all
   locally stored data on that phone and stops protection on it.
-- **Delete your data on our servers.** Email [SUPPORT_EMAIL] from the
+- **Delete your data on our servers.** Email krishnahanda01234@gmail.com from the
   address you use for Beta Shield (or include the guardian phone number
   you registered with) and ask for deletion. We will delete the family's
   pairing, profiles and risk records from our database and confirm by email.
@@ -163,4 +161,4 @@ notes.
 
 ## Contact
 
-[SUPPORT_EMAIL] · [OPERATOR_NAME / ADDRESS]
+krishnahanda01234@gmail.com · Krishna Handa, India

@@ -54,7 +54,7 @@ JSON and keep that file out of git):
 
 | Flag | Default | What it does |
 |---|---|---|
-| `API_BASE_URL` | *(empty → demo backend)* | Your deployed `backend/server` URL, e.g. `https://beta-shield-server.onrender.com` |
+| `API_BASE_URL` | *(empty → demo backend)* | Your deployed `backend/server` URL, e.g. `https://betashield.onrender.com` |
 | `CERT_PINNING` | `on` | Set `off` to disable TLS pinning against `assets/certs/*.pem` (only useful for debugging against a local backend) |
 | `ADMOB_BANNER_ID` / `ADMOB_INTERSTITIAL_ID` / `ADMOB_REWARDED_ID` / `ADMOB_APP_OPEN_ID` | Google's public **test** ad unit IDs | Your real AdMob ad unit IDs |
 | `ADMOB_TEST_DEVICES` | *(empty)* | Comma-separated hashed device IDs (AdMob prints these to logcat) so your own phone always gets test ads |
@@ -66,13 +66,13 @@ Example release build against a real backend:
 
 ```bash
 flutter build appbundle --release \
-  --dart-define=API_BASE_URL=https://beta-shield-server.onrender.com \
-  --dart-define=ADMOB_BANNER_ID=ca-app-pub-XXXXXXXXXXXXXXXX/1111111111 \
-  --dart-define=ADMOB_INTERSTITIAL_ID=ca-app-pub-XXXXXXXXXXXXXXXX/2222222222 \
-  --dart-define=ADMOB_REWARDED_ID=ca-app-pub-XXXXXXXXXXXXXXXX/3333333333 \
-  --dart-define=ADMOB_APP_OPEN_ID=ca-app-pub-XXXXXXXXXXXXXXXX/4444444444 \
-  --dart-define=PRIVACY_POLICY_URL=https://betashield.example/privacy \
-  --dart-define=SUPPORT_EMAIL=support@betashield.example
+  --dart-define=API_BASE_URL=https://betashield.onrender.com \
+  --dart-define=ADMOB_BANNER_ID=ca-app-pub-4904451187037049/9756162905 \
+  --dart-define=ADMOB_INTERSTITIAL_ID=ca-app-pub-4904451187037049/1686101192 \
+  --dart-define=ADMOB_REWARDED_ID=ca-app-pub-4904451187037049/8121673724 \
+  --dart-define=ADMOB_APP_OPEN_ID=ca-app-pub-4904451187037049/6944323420 \
+  --dart-define=PRIVACY_POLICY_URL=https://krishuking001.github.io/BetaShield/privacy-policy/ \
+  --dart-define=SUPPORT_EMAIL=krishnahanda01234@gmail.com
 ```
 
 ### Firebase (push, analytics, crash reports)

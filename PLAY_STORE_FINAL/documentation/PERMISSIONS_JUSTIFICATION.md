@@ -148,8 +148,6 @@ Nothing more."*, with the one-line descriptions in `app_en.arb`
 `pPermCallsDesc / pPermMsgDesc / pPermAppDesc`). The privacy policy is
 reachable from the Protected home menu ("Privacy") and from Guardian
 Settings (`protected_screens.dart` ~line 712, `guardian_extra_screens.dart`
-~line 479). ⚠ Both open `AppConfig.privacyPolicyUrl`, which in the current
-AAB is the placeholder `https://betashield.example/privacy` — see
-RELEASE_CHECKLIST (RED-1). Also consider placing a short "what we read and
+~line 479). Both open `AppConfig.privacyPolicyUrl`, which in the final AAB is the live policy `https://krishuking001.github.io/BetaShield/privacy-policy/`. Also consider placing a short "what we read and
 why" paragraph directly on the permissions screen; today it relies on the
 one-line descriptions plus the Play listing/policy.

@@ -1,49 +1,65 @@
-# Version & build info — upload artifact
+# Version & build info — FINAL production build
+
+Built 2026-10-08 (local time 23:06) from `main` @ merge of PR #1 plus the
+production-config edits listed below.
 
 | Item | Value | How verified |
 |---|---|---|
 | **Upload file** | `release/BetaShield-release.aab` | — |
-| AAB size | 74,535,812 bytes (≈71.1 MB) | file size |
-| **AAB SHA-256** | `366e6db47c21c1cb69b0dcc5565a9059c9aa2c3d6d973f438b364b4743559afc` | `sha256sum` of the copied file |
-| **versionName** | `1.0.0` | decoded `AndroidManifest.xml` in the AAB; `pubspec.yaml` `version: 1.0.0+1` |
-| **versionCode** | `1` | same |
-| applicationId / package | `com.betashield.beta_shield` | manifest `package`, `build.gradle.kts` |
-| minSdk | 24 (Android 7.0) | manifest `uses-sdk`, `build.gradle.kts` |
-| targetSdk | 36 | manifest `uses-sdk`, `build.gradle.kts` |
-| compileSdk | 36 | `build.gradle.kts` (pinned; SDK 37 preview was unstable) |
-| Debuggable | No | manifest has no `debuggable` |
-| Cleartext traffic | Blocked (default) | no `usesCleartextTraffic` attribute |
-| Minify / shrink | R8 on, `proguard-rules.pro` | `build.gradle.kts` |
-| Production API | `https://betashield.onrender.com` | found as a string in `libapp.so` for arm64-v8a, armeabi-v7a, x86_64; no `10.0.2.2` / `127.0.0.1` / `postgresql` / `supabase` strings |
-| Firebase | project `betashield-99f0d`, project number `596851871047` | `google_app_id`, `gcm_defaultSenderId`, `google_api_key` present in AAB `resources.pb`; `google-services.json` itself is **not** inside the AAB and **not** in this folder |
-| Signing | Release upload key, **not** the debug key | `jarsigner -verify` → "jar verified" |
-| Signing cert | `CN=Beta Shield, OU=Beta Shield, O=Beta Shield, L=Unknown, ST=Unknown, C=IN`, valid 2026-10-02 → 2054-02-17, SHA384withRSA | `keytool -printcert -jarfile` |
-| Upload-key SHA-256 fingerprint | `93:EA:11:8B:AE:9E:D4:EF:33:C9:58:C0:04:37:79:71:62:14:21:D2:E5:6A:F2:60:BF:23:08:F1:36:C3:14:70` | same (public fingerprint; safe to keep) |
-| Build command used | `flutter build appbundle --release --dart-define=API_BASE_URL=https://betashield.onrender.com` | per your instructions; AAB (07:56) is newer than every source file, so **no rebuild was needed** |
-| Flutter / Dart | Flutter 3.47.x stable / Dart 3.13.x | SDK used for the build |
-| AGP / Kotlin | 9.1.0 / 2.4.0 | `android/settings.gradle.kts` |
+| Size | 74,533,593 bytes (≈71.1 MB) | file size |
+| **SHA-256** | `5710150d9d65427a5e3d58b1be9dc74fb987a0775f26e29298415c545045aa1a` | `sha256sum` of the copied file |
+| **versionName** | `1.0.0` | decoded AAB manifest |
+| **versionCode** | `1` | decoded AAB manifest (`pubspec.yaml` `1.0.0+1`; nothing uploaded yet, so `1` is valid) |
+| applicationId | `com.betashield.beta_shield` | decoded AAB manifest |
+| minSdk / targetSdk / compileSdk | 24 / 36 / 36 | AAB `uses-sdk`; `android/app/build.gradle.kts` |
+| Debuggable / cleartext | not debuggable; cleartext blocked (no override) | decoded AAB manifest |
+| Shrink | R8 minify + resource shrink on | `build.gradle.kts` |
+| Signing | release **upload key** (not debug) — `jarsigner -verify` → "jar verified" | cert `CN=Beta Shield…`, valid 2026-10-02 → 2054-02-17 |
+| Upload-key SHA-256 fingerprint | `93:EA:11:8B:AE:9E:D4:EF:33:C9:58:C0:04:37:79:71:62:14:21:D2:E5:6A:F2:60:BF:23:08:F1:36:C3:14:70` | `keytool -printcert -jarfile` (public fingerprint) |
 
-## ⚠ Values compiled into this AAB that are still placeholders
+## Production values compiled into this AAB (all verified by scanning the AAB)
 
-| Setting | Current value in AAB | Needs |
+| Setting | Value | Found in |
 |---|---|---|
-| `PRIVACY_POLICY_URL` | `https://betashield.example/privacy` (default) | your real hosted URL |
-| `SUPPORT_EMAIL` | `support@betashield.example` (default) | your real support address |
-| AdMob app ID (manifest) | Google **test** `ca-app-pub-3940256099942544~3347511713` | your real AdMob app ID |
-| AdMob unit IDs (banner, interstitial, rewarded, app-open) | Google **test** IDs | your real unit IDs |
+| `API_BASE_URL` | `https://betashield.onrender.com` | `libapp.so` arm64-v8a, armeabi-v7a, x86_64 |
+| `PRIVACY_POLICY_URL` | `https://krishuking001.github.io/BetaShield/privacy-policy/` | all 3 ABIs |
+| `SUPPORT_EMAIL` | `krishnahanda01234@gmail.com` | all 3 ABIs |
+| AdMob **App ID** (manifest) | `ca-app-pub-4904451187037049~2263762257` | decoded AAB manifest `com.google.android.gms.ads.APPLICATION_ID` |
+| `ADMOB_BANNER_ID` (Guardian_Banner) | `ca-app-pub-4904451187037049/9756162905` | all 3 ABIs |
+| `ADMOB_INTERSTITIAL_ID` (Guardian_Interstitial) | `ca-app-pub-4904451187037049/1686101192` | all 3 ABIs |
+| `ADMOB_REWARDED_ID` (Guardian_Rewarded) | `ca-app-pub-4904451187037049/8121673724` | all 3 ABIs |
+| `ADMOB_APP_OPEN_ID` (Guardian_AppOpen) | `ca-app-pub-4904451187037049/6944323420` | all 3 ABIs |
+| Firebase | project `betashield-99f0d` (number `596851871047`) — `google_app_id`, `google_api_key`, `gcm_defaultSenderId` in `resources.pb` | `google-services.json` itself is **not** in the AAB |
 
-These can only be changed with a rebuild — see `PLAY_STORE_SUBMISSION_GUIDE.md`
-§ "Final rebuild". Uploading the current AAB to **Internal testing** is fine;
-do not promote it to **Production** until they are replaced.
+Absent from the AAB (scanned every entry): Google test publisher ID
+`3940256099942544`, `betashield.example`, `10.0.2.2`, `postgresql://`,
+`supabase.co`. (`127.0.0.1` appears only inside Flutter's own `libflutter.so`.)
 
-## Versioning rules for later uploads
-- Every upload to Play must have a **higher versionCode** than any previous
-  upload. Bump `pubspec.yaml` `version: 1.0.0+1` → `1.0.0+2` before a rebuild
-  *after* you have uploaded `+1` anywhere. If you have not uploaded yet, `+1`
-  can be reused.
-- Keep the same upload keystore for every release (back it up outside the repo).
+## Exact build command used
+```bash
+flutter build appbundle --release \
+  --dart-define=API_BASE_URL=https://betashield.onrender.com \
+  --dart-define=PRIVACY_POLICY_URL=https://krishuking001.github.io/BetaShield/privacy-policy/ \
+  --dart-define=SUPPORT_EMAIL=krishnahanda01234@gmail.com \
+  --dart-define=ADMOB_BANNER_ID=ca-app-pub-4904451187037049/9756162905 \
+  --dart-define=ADMOB_INTERSTITIAL_ID=ca-app-pub-4904451187037049/1686101192 \
+  --dart-define=ADMOB_REWARDED_ID=ca-app-pub-4904451187037049/8121673724 \
+  --dart-define=ADMOB_APP_OPEN_ID=ca-app-pub-4904451187037049/6944323420
+```
+Source changes made for this build (no other app/backend code touched):
+`lib/core/config/app_config.dart` (privacy URL / support email defaults),
+`android/app/src/main/AndroidManifest.xml` (production AdMob app ID),
+`README.md` (example command). The ad **unit** IDs are still supplied by
+`--dart-define`; without them a build falls back to Google test units, so
+always use the command above.
 
-## Optional test APK
-`release/BetaShield-TEST-release.apk` (80,929,672 bytes, SHA-256 `1dcfe89cf31d8a22b3922e5ff29959c793c3511d1746d9da4de727d13695bc4a`, built 2026-10-08 with `flutter build apk --release --dart-define=API_BASE_URL=https://betashield.onrender.com`, apksigner v2 signature = same upload-key fingerprint, production URL verified in all 3 ABIs) is a **TEST APK only**:
-same code, production API URL, release signing — for sideloading onto a real
-phone. **Never upload it to Play**; the AAB is the only upload artifact.
+Pre-build checks run: `flutter pub get`, `flutter analyze` → *No issues
+found*, `flutter test` → *All tests passed* (70).
+
+## Test APK
+None is included in this package (skipped by request; the AAB is the only artifact). If you want one for sideloading later, build `flutter build apk --release` with the same `--dart-define` flags and label it TEST — never upload it to Play.
+
+## Versioning for later uploads
+Every Play upload needs a higher versionCode than any previous upload; bump
+`pubspec.yaml` (`1.0.0+2`, …) before the next build. Keep using the same upload
+keystore and back it up outside the repo.

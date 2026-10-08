@@ -17,11 +17,11 @@ abstract final class AppConfig {
 
   static const privacyPolicyUrl = String.fromEnvironment(
     'PRIVACY_POLICY_URL',
-    defaultValue: 'https://betashield.example/privacy',
+    defaultValue: 'https://krishuking001.github.io/BetaShield/privacy-policy/',
   );
   static const supportEmail = String.fromEnvironment(
     'SUPPORT_EMAIL',
-    defaultValue: 'support@betashield.example',
+    defaultValue: 'krishnahanda01234@gmail.com',
   );
 
   // Google's published test ad units (Android).

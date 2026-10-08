@@ -112,12 +112,12 @@
             android:name="com.google.firebase.messaging.default_notification_color"
             android:resource="@color/notification_color"/>
 
-        <!-- AdMob application ID. Replace with your own from the AdMob
-             console before release — see README → "Configuration". The value
-             here is Google's published TEST app ID, safe for development. -->
+        <!-- AdMob application ID (production). Ad unit IDs are supplied at
+             build time via dart-define flags (see README → "Configuration");
+             without them the app falls back to Google's TEST ad units. -->
         <meta-data
             android:name="com.google.android.gms.ads.APPLICATION_ID"
-            android:value="ca-app-pub-3940256099942544~3347511713"/>
+            android:value="ca-app-pub-4904451187037049~2263762257"/>
     </application>
 
     <!-- Package visibility (Android 11+): only these specific apps are
