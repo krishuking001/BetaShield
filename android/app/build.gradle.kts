@@ -5,6 +5,10 @@ plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+    // Firebase: declared here (versions pinned in settings.gradle.kts) but
+    // only actually applied below, conditionally — see `hasFirebase`.
+    id("com.google.gms.google-services") apply false
+    id("com.google.firebase.crashlytics") apply false
 }
 
 // Release signing: reads android/key.properties if present (see
@@ -18,11 +22,17 @@ if (hasReleaseSigning) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
 }
 
+// Firebase (push/analytics/crash reports): only applied if google-services.json
+// is present, same reasoning as signing above — the google-services plugin
+// fails the build hard if the file is missing, but this repo needs to keep
+// building on a fresh checkout with no Firebase project configured yet (see
+// README → "Firebase").
+val hasFirebase = file("google-services.json").exists()
+
 android {
     namespace = "com.betashield.beta_shield"
-    // Some plugins (connectivity_plus) need compileSdk 36 even though the
-    // app still targets 35 — compiling against a newer SDK than you target
-    // is normal and doesn't change runtime behaviour on older devices.
+    // compileSdk and targetSdk both 36 (Play Console requires API 36 for new
+    // apps/updates as of late 2026).
     compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
@@ -35,7 +45,7 @@ android {
     defaultConfig {
         applicationId = "com.betashield.beta_shield"
         minSdk = 24
-        targetSdk = 35
+        targetSdk = 36
         // Uses the version code from pubspec.yaml. When using split APKs, 1000 * ABI_VERSION
         // is added automatically by Flutter. (https://developer.android.com/studio/build/configure-apk-splits#configure-APK-versions)
         // You can force using the value of versionCode by specifying the `-P force-version-code-ignoring-abi=true`
@@ -89,4 +99,12 @@ dependencies {
 
 flutter {
     source = "../.."
+}
+
+// Applied last (standard placement for these two) so the plugins see the
+// already-configured applicationId etc. Only runs when google-services.json
+// exists — see `hasFirebase` above.
+if (hasFirebase) {
+    apply(plugin = "com.google.gms.google-services")
+    apply(plugin = "com.google.firebase.crashlytics")
 }

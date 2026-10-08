@@ -17,7 +17,7 @@ missing before a real Play Store submission.
 ## Requirements
 
 - Flutter 3.35+ / Dart 3.13+ (stable channel)
-- Android SDK: minSdk 24, targetSdk 35, compileSdk 35
+- Android SDK: minSdk 24, targetSdk 36, compileSdk 36
 - A physical Android phone or an emulator running **Android 10 (API 29) or
   newer** for the full experience — call screening (the `ROLE_CALL_SCREENING`
   role) only exists from Android 10 onward. Below that, ring detection and
