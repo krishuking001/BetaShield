@@ -100,6 +100,9 @@ export const createPairingSchema = z
 const guardianProfile = z
   .object({
     name: z.string().min(1).max(40),
+    // Optional Devanagari spelling of the name, shown on the parent's screens
+    // (the app's "Your name in Hindi" field sends this as `nameHi`).
+    nameHi: z.string().min(1).max(40).optional(),
     phone: z.string().regex(/^\+?[0-9 ]{6,16}$/),
     // Small JPEG thumbnail, base64. ~256px, <= 60 KB encoded.
     photoBase64: z.string().max(80_000).optional(),

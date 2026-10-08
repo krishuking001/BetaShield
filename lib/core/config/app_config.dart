@@ -4,9 +4,9 @@
 /// defaults are Google's official *test* IDs so a fresh checkout can never
 /// serve live ads by accident. See README → "Configuration".
 abstract final class AppConfig {
-  /// Base URL of the Cloud Functions API, e.g.
-  /// `https://asia-south1-<project>.cloudfunctions.net/api`.
-  /// Empty → the app runs against the in-memory demo backend.
+  /// Base URL of `backend/server` (Express on Supabase/Render), e.g.
+  /// `https://betashield.onrender.com`. Empty → the app runs against the
+  /// in-memory demo backend.
   static const apiBaseUrl = String.fromEnvironment('API_BASE_URL');
 
   /// `on` (default) pins TLS trust to the roots in `assets/certs/` for https API hosts.

@@ -1,0 +1,7 @@
+# GitHub Pages configuration: publishes only the privacy policy from /docs.
+title: Beta Shield
+theme: jekyll-theme-minimal
+exclude:
+  - PRIVACY_POLICY.md
+  - PLAY_STORE_GUIDE.md
+  - store
